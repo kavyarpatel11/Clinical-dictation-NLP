@@ -24,20 +24,48 @@ from spacy.symbols import ORTH
 from spacy.matcher import Matcher
 from spacy.lang.en.stop_words import STOP_WORDS as SPACY_STOP_WORDS
 
-# Comprehensive list of medical abbreviations, titles, routes, and frequencies
-CLINICAL_ABBREVIATIONS = [
+# Titles and clinical prefixes that can never end a sentence
+TITLE_ABBREVIATIONS = [
     # Physician and clinical titles
     r"Dr\.", r"Drs\.", r"Prof\.", r"Mr\.", r"Mrs\.", r"Ms\.", r"Pt\.", r"RN\.", r"MD\.",
-    # Latin medical routes & frequencies
-    r"p\.o\.", r"p\.r\.n\.", r"q\.i\.d\.", r"b\.i\.d\.", r"t\.i\.d\.", r"q\.d\.", r"q\.h\.",
-    r"q\.2h\.", r"q\.4h\.", r"q\.6h\.", r"q\.8h\.", r"q\.12h\.", r"q\.a\.m\.", r"q\.p\.m\.",
-    r"q\.h\.s\.", r"i\.v\.", r"i\.m\.", r"s\.c\.", r"s\.q\.", r"p\.r\.", r"o\.d\.", r"o\.s\.", r"o\.u\.",
-    # Clinical shorthand with periods
-    r"Tab\.", r"Cap\.", r"Susp\.", r"Inj\.", r"Sol\.", r"Elix\.", r"Stat\.", r"Vs\.", r"vs\.",
-    r"approx\.", r"min\.", r"hr\.", r"wk\.", r"mo\.", r"yr\.", r"wt\.", r"ht\.",
-    # Latin/general academic abbreviations
+    # Medication formulation prefixes
+    r"Tab\.", r"Cap\.", r"Susp\.", r"Inj\.", r"Sol\.", r"Elix\.", r"Stat\.",
+    # Comparative/relative terms and units
+    r"Vs\.", r"vs\.", r"approx\.", r"min\.", r"hr\.", r"wk\.", r"mo\.", r"yr\.", r"wt\.", r"ht\.",
+    # Academic/Latin prefixes
     r"e\.g\.", r"i\.e\.", r"et al\.", r"etc\."
 ]
+
+# Latin medical routes & frequencies that can end a sentence
+ROUTE_FREQUENCY_ABBREVIATIONS = [
+    r"p\.o\.", r"p\.r\.n\.", r"q\.i\.d\.", r"b\.i\.d\.", r"t\.i\.d\.", r"q\.d\.",
+    r"q\.h\.s\.", r"q\.h\.", r"q\.2h\.", r"q\.4h\.", r"q\.6h\.", r"q\.8h\.", r"q\.12h\.",
+    r"q\.a\.m\.", r"q\.p\.m\.",
+    r"i\.v\.", r"i\.m\.", r"s\.c\.", r"s\.q\.", r"p\.r\.",
+    r"o\.d\.", r"o\.s\.", r"o\.u\."
+]
+
+# Combined comprehensive list of medical abbreviations
+CLINICAL_ABBREVIATIONS = TITLE_ABBREVIATIONS + ROUTE_FREQUENCY_ABBREVIATIONS
+
+# Capitalized sentence starters that follow a route/frequency abbreviation to mark a new sentence
+SENTENCE_STARTERS = {
+    "Patient", "Pt", "She", "He", "They", "The", "Plan", "Follow-up", "Follow",
+    "Vital", "Vitals", "Denies", "Denied", "Continue", "Continued", "Discharge", "Discharged",
+    "Prescribe", "Prescribed", "Recommend", "Recommended", "Start", "Started",
+    "Will", "Next", "Repeat", "Return", "Advised", "Blood", "Heart", "Physical",
+    "Assessment", "Current", "No", "Dr", "Dr.", "At", "In", "On", "If",
+    "Laboratory", "Labs", "Exam", "Examination", "Review", "Please", "History",
+    "Creatinine", "Glucose", "Temperature", "Medication", "Medications",
+    "This", "Her", "His", "Their", "These", "Those", "There",
+    "Administered", "Adjusted", "Maintained", "Initiated", "Scheduled", "Recheck"
+}
+
+ROUTE_FREQUENCY_SET = {abbr.replace(r"\.", ".").lower() for abbr in ROUTE_FREQUENCY_ABBREVIATIONS}
+
+# Named constant for unpunctuated text threshold:
+# sentence-ending punctuation (. ! ? ;) appearing less than about once per 25 words
+UNPUNCTUATED_WORDS_PER_PUNCT_THRESHOLD = 25
 
 # Standard medical acronyms that do not always contain dots
 CLINICAL_ACRONYMS = {
@@ -163,10 +191,12 @@ def create_clinical_punkt_tokenizer(custom_abbreviations: Optional[List[str]] = 
     for abbr in CLINICAL_ABBREVIATIONS:
         clean = abbr.replace(r"\.", ".").rstrip(".").lower()
         params.abbrev_types.add(clean)
+        params.abbrev_types.add(clean.replace(".", ""))
     if custom_abbreviations:
         for abbr in custom_abbreviations:
             clean = abbr.replace(r"\.", ".").rstrip(".").lower()
             params.abbrev_types.add(clean)
+            params.abbrev_types.add(clean.replace(".", ""))
     return PunktSentenceTokenizer(params)
 
 
@@ -202,6 +232,12 @@ def protect_medical_abbreviations(text: str) -> Tuple[str, Dict[str, str]]:
     Protects medical abbreviations, decimal values, and dates from premature sentence splitting
     by substituting periods with a unique sentinel token.
 
+    - Titles that can never end a sentence (Dr., Drs., Tab., Cap., etc.) are always protected.
+    - Routes & frequencies that can end a sentence (p.o., b.i.d., q.d., etc.) preserve their
+      final period as a true sentence boundary when the following word is capitalized and in
+      SENTENCE_STARTERS. Internal dots remain protected.
+    - Decimal values (e.g., 2.5, 126.4) and dates (e.g., 14.11.2023) are protected.
+
     Args:
         text (str): Input clinical text.
 
@@ -211,17 +247,26 @@ def protect_medical_abbreviations(text: str) -> Tuple[str, Dict[str, str]]:
     mapping = {}
     protected = text
 
-    # 1. Protect specific clinical abbreviations (case-insensitive regex)
-    combined_abbrevs = "|".join(CLINICAL_ABBREVIATIONS)
-    pattern = re.compile(rf"\b({combined_abbrevs})", re.IGNORECASE)
+    # 1. Protect clinical abbreviations sorted descending by length
+    all_abbrs_sorted = sorted(CLINICAL_ABBREVIATIONS, key=lambda x: len(x.replace(r"\.", ".")), reverse=True)
+    pattern = re.compile(rf"\b({'|'.join(all_abbrs_sorted)})", re.IGNORECASE)
 
     def replace_abbrev(match):
         orig = match.group(0)
         token_key = f"§ABBR_{len(mapping)}§"
-        # Store replacement where periods are replaced by sentinel
-        safe_repr = orig.replace(".", DOT_SENTINEL)
         mapping[token_key] = orig
-        return safe_repr
+        clean = orig.replace(r"\.", ".").lower()
+
+        # Route/frequency abbreviations can end a sentence if followed by a capitalized sentence starter
+        if clean in ROUTE_FREQUENCY_SET:
+            following = match.string[match.end():]
+            m_next = re.match(r"\s+([A-Za-z0-9\-]+)", following)
+            if m_next:
+                next_word = m_next.group(1)
+                if next_word[0].isupper() and (next_word in SENTENCE_STARTERS or next_word.rstrip(".") in SENTENCE_STARTERS):
+                    if orig.endswith("."):
+                        return orig[:-1].replace(".", DOT_SENTINEL) + "."
+        return orig.replace(".", DOT_SENTINEL)
 
     protected = pattern.sub(replace_abbrev, protected)
 
@@ -343,6 +388,24 @@ def detect_clinical_patterns(text: str) -> List[Dict[str, Any]]:
     return patterns
 
 
+def is_unpunctuated(text: str, threshold: int = UNPUNCTUATED_WORDS_PER_PUNCT_THRESHOLD) -> bool:
+    """
+    Determines whether a clinical text transcript appears unpunctuated.
+    A transcript is deemed unpunctuated if sentence-ending punctuation (. ! ? ;)
+    appears less than about once per threshold words in the text.
+    Punctuated transcripts skip dictation boundary cues entirely.
+    """
+    if not text or not text.strip():
+        return False
+    words = text.split()
+    if not words:
+        return False
+    punct_count = sum(text.count(p) for p in [".", "!", "?", ";"])
+    if punct_count == 0:
+        return True
+    return (len(words) / punct_count) > threshold
+
+
 def segment_sentences(
     text: str,
     engine: str = "hybrid",
@@ -375,19 +438,21 @@ def segment_sentences(
     protected_text, mapping = protect_medical_abbreviations(cleaned_text)
 
     # Step 2: Handle unpunctuated clinical dictation streams
-    # Insert a boundary before prominent clinical shift markers if not preceded by punctuation
-    # Examples: 'pt admitted', 'vitals stable', 'Dr. [Name] consulted', 'started on', 'pt denies', 'discharge planned'
-    dictation_boundary_cues = [
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:pt\s+admitted|patient\s+admitted)\b)",
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:vitals\s+stable|vital\s+signs:?)\b)",
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:Dr§DOT§\s+[A-Z][a-z]+\s+(?:consulted|evaluated|noted|advised))\b)",
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:started\s+on\s+[A-Z][a-z]+)\b)",
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:pt\s+denies|patient\s+denies|reports\s+no)\b)",
-        r"(?<=[^\.\?\!;\n])\s+(?=(?:discharge\s+planned|follow-up\s+scheduled|next\s+appointment)\b)"
-    ]
-
-    for cue in dictation_boundary_cues:
-        protected_text = re.sub(cue, ". ", protected_text, flags=re.IGNORECASE)
+    # Apply cues only to text that looks unpunctuated (sentence-ending punctuation appears
+    # less than once per UNPUNCTUATED_WORDS_PER_PUNCT_THRESHOLD words).
+    # Punctuated transcripts skip the cues entirely.
+    # Scoped case-sensitivity ensures Dr. Name checks capitalization while cues stay case-insensitive.
+    # Generic cues ('reports no', 'next appointment', 'started on') are removed so they cannot fire mid-sentence.
+    if is_unpunctuated(protected_text, UNPUNCTUATED_WORDS_PER_PUNCT_THRESHOLD):
+        dictation_boundary_cues = [
+            r"(?<=[^\.\?\!;\n])\s+(?=(?i:pt\s+admitted|patient\s+admitted)\b)",
+            r"(?<=[^\.\?\!;\n])\s+(?=(?i:vitals\s+stable|vital\s+signs:?)\b)",
+            r"(?<=[^\.\?\!;\n])\s+(?=(?i:Dr§DOT§\s+)(?-i:[A-Z][a-z]+)\s+(?i:consulted|evaluated|noted|advised)\b)",
+            r"(?<=[^\.\?\!;\n])\s+(?=(?i:pt\s+denies|patient\s+denies)\b)",
+            r"(?<=[^\.\?\!;\n])\s+(?=(?i:discharge\s+planned|follow-up\s+scheduled)\b)"
+        ]
+        for cue in dictation_boundary_cues:
+            protected_text = re.sub(cue, ". ", protected_text)
 
     # Step 3: Sentence splitting using chosen NLP engine
     tokenizer_to_use = punkt_tokenizer or CLINICAL_PUNKT_TOKENIZER

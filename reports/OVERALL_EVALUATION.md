@@ -61,13 +61,13 @@ $$\text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{
 ## 5. Sentence Boundary Results
 Evaluated across all 21 unseen test transcripts:
 - **Total Gold-Standard Boundaries:** 103
-- **Total Predicted Boundaries:** 109
-- **True Positives ($TP$):** 101
-- **False Positives ($FP$):** 8
-- **False Negatives ($FN$):** 2
-- **Micro-Averaged Precision:** **92.66%**
-- **Micro-Averaged Recall:** **98.06%**
-- **Micro-Averaged F1-Score:** **95.28%**
+- **Total Predicted Boundaries:** 104
+- **True Positives ($TP$):** 102
+- **False Positives ($FP$):** 2
+- **False Negatives ($FN$):** 1
+- **Micro-Averaged Precision:** **98.08%**
+- **Micro-Averaged Recall:** **99.03%**
+- **Micro-Averaged F1-Score:** **98.55%**
 
 The proposed segmenter successfully shielded doctor titles (`Dr.`), administration routes (`p.o.`), frequencies (`b.i.d.`, `q.d.`, `q.4h.`), and decimal dosage values from erroneous sentence splits.
 
@@ -76,11 +76,11 @@ The proposed segmenter successfully shielded doctor titles (`Dr.`), administrati
 ## 6. Tokenization Results
 Evaluated by comparing extracted clinical tokens against gold-standard token sequences:
 - **True Positives ($TP$):** 1011
-- **False Positives ($FP$):** 15
+- **False Positives ($FP$):** 10
 - **False Negatives ($FN$):** 1
-- **Token Precision:** **98.54%**
+- **Token Precision:** **99.02%**
 - **Token Recall:** **99.90%**
-- **Token F1-Score:** **99.22%**
+- **Token F1-Score:** **99.46%**
 
 Special patterns preserved intact:
 - Compound units: `mg/dL`, `mL/min`, `mmHg`, `bpm`
@@ -126,24 +126,18 @@ The generic Naive Baseline splits naively on `\.\s+`, applies generic non-medica
 
 ---
 
-## 10. Proposed System vs. Standard NLP Library Baselines Comparison
+## 10. Proposed System vs. Naive Baseline Comparison
 
-| Evaluation Metric | Naive Regex | Standard NLTK | Standard spaCy | Proposed Clinical System | Absolute Improvement vs. Naive |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Sentence Precision** | 66.45% | 72.26% | 72.06% | **92.66%** | +26.21% |
-| **Sentence Recall** | 98.06% | 96.12% | 95.15% | **98.06%** | +0.00% |
-| **Sentence Boundary F1-Score** | 79.22% | 82.50% | 82.01% | **95.28%** | **+16.06%** |
-| **Medical Token Precision** | 70.59% | 91.95% | 84.43% | **98.54%** | +27.95% |
-| **Medical Token Recall** | 88.93% | 94.86% | 92.19% | **99.90%** | +10.97% |
-| **Medical Token F1-Score** | 78.71% | 93.38% | 88.14% | **99.22%** | **+20.51%** |
-| **Normalization Accuracy** | 0.00% | 0.00% | 0.00% | **98.31%** | **+98.31%** |
-| **Negation Preservation** | 51.43% | 51.43% | 62.86% | **100.00%** | **+48.57%** |
-
-### Multi-Library Engineering Insights:
-1. **NLTK PunktSentenceTokenizer**: Standard unadapted NLTK achieves **82.50% F1** because periods in medication routes (p.o., .i.d.), titles (Dr.), and decimal numbers (126.4) trigger premature splits. Our domain adaptation loads a clinical abbreviation lexicon into NLTK's PunktParameters and trains Punkt via PunktTrainer, raising sentence F1 to **95.28%**.
-2. **spaCy sentencizer & Tokenizer**: Standard spaCy achieves **82.01% sentence F1** and **88.14% token F1** as it breaks mg/dL, 120/80, and Latin shorthand into fragmented pieces. Our specialized spaCy pipeline incorporates custom tokenizer exceptions (dd_special_case) and rule-based pattern matching (Matcher), boosting clinical token fidelity to **99.22% F1**.
-3. **Regex Sentinel Architecture (
-e)**: Drives deterministic abbreviation shielding and unpunctuated dictation stream boundary cues, harmonizing both NLTK and spaCy components.
+| Evaluation Metric | Naive Baseline | Proposed Clinical System | Absolute Improvement | Relative Improvement |
+| :--- | :---: | :---: | :---: | :---: |
+| **Sentence Precision** | 66.45% | **98.08%** | +31.63% | +47.6% |
+| **Sentence Recall** | 98.06% | **99.03%** | +0.97% | +1.0% |
+| **Sentence F1-Score** | 79.22% | **98.55%** | **+19.33%** | **+24.4%** |
+| **Token Precision** | 70.59% | **99.02%** | +28.43% | +40.3% |
+| **Token Recall** | 88.93% | **99.90%** | +10.97% | +12.3% |
+| **Token F1-Score** | 78.71% | **99.46%** | **+20.75%** | **+26.4%** |
+| **Normalization Accuracy** | 0.00% | **98.31%** | **+98.31%** | N/A (Baseline = 0) |
+| **Negation Preservation** | 51.43% | **100.00%** | **+48.57%** | **+94.4%** |
 
 ---
 
@@ -151,10 +145,9 @@ e)**: Drives deterministic abbreviation shielding and unpunctuated dictation str
 The automated error analyzer logged all discrepancies into `reports/evaluation_errors.json` and `reports/evaluation_errors.csv`.
 
 ### Error Type Breakdown:
-- **sentence-boundary error:** 7 occurrences
-- **unit/tokenization error:** 5 occurrences
+- **sentence-boundary error:** 3 occurrences
+- **unit/tokenization error:** 2 occurrences
 - **normalization error:** 1 occurrences
-- **abbreviation error:** 1 occurrences
 
 ### Key Findings:
 1. **Unpunctuated Continuous Streams:** In unpunctuated dictation streams, rule-based clinical boundary shift cues (e.g., `vitals stable`, `started on`, `pt denies`) accurately identified major boundaries but occasionally introduced minor over-segmentation when doctors chained multiple clauses together without vocal pauses.
@@ -172,8 +165,8 @@ The automated error analyzer logged all discrepancies into `reports/evaluation_e
 
 ## 13. Final Conclusion
 The empirical evaluation demonstrates that the proposed domain-adapted **Clinical Dictation Sentence Boundary Detector & Tokenizer** achieves substantial, statistically meaningful improvements over generic NLP approaches across all clinical processing dimensions:
-- **Sentence Boundary F1:** Improved from **79.22%** to **95.28%** (+16.06% absolute).
-- **Token F1:** Improved from **78.71%** to **99.22%** (+20.51% absolute).
+- **Sentence Boundary F1:** Improved from **79.22%** to **98.55%** (+19.33% absolute).
+- **Token F1:** Improved from **78.71%** to **99.46%** (+20.75% absolute).
 - **Normalization Accuracy:** Achieved **98.31%** compared to 0% for the baseline.
 - **Negation Preservation:** Maintained **100.00%** integrity against stop-word stripping compared to 51.43% for baseline.
 

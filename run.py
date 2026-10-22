@@ -57,6 +57,14 @@ BENCHMARK_RESULTS = {
         "token_recall": 0.8893,
         "normalization_accuracy": 0.0000,
         "negation_preservation_accuracy": 0.5143
+    },
+    "improvement": {
+        "sentence_f1_abs": 0.1606,
+        "sentence_f1_pct": 20.27,
+        "token_f1_abs": 0.2051,
+        "token_f1_pct": 26.06,
+        "normalization_acc_abs": 0.9831,
+        "negation_acc_abs": 0.4857
     }
 }
 

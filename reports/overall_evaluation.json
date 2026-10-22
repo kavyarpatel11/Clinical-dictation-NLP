@@ -10,22 +10,22 @@
   "proposed_system": {
     "system_name": "Proposed Clinical NLP Pipeline",
     "sentence": {
-      "true_positives": 101,
-      "false_positives": 8,
-      "false_negatives": 2,
-      "precision": 0.9266,
-      "recall": 0.9806,
-      "f1_score": 0.9528,
+      "true_positives": 102,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "precision": 0.9808,
+      "recall": 0.9903,
+      "f1_score": 0.9855,
       "total_gold_boundaries": 103,
-      "total_predicted_boundaries": 109
+      "total_predicted_boundaries": 104
     },
     "token": {
       "true_positives": 1011,
-      "false_positives": 15,
+      "false_positives": 10,
       "false_negatives": 1,
-      "precision": 0.9854,
+      "precision": 0.9902,
       "recall": 0.999,
-      "f1_score": 0.9922
+      "f1_score": 0.9946
     },
     "normalization": {
       "total_targets": 59,
@@ -117,23 +117,23 @@
         "id": "transcript_008",
         "sentence": {
           "gold_count": 5,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 5,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.8333,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9091
+          "f1_score": 1.0
         },
         "token": {
           "gold_count": 49,
-          "predicted_count": 50,
+          "predicted_count": 49,
           "tp": 49,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.98,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9899
+          "f1_score": 1.0
         },
         "normalization": {
           "total_targets": 5,
@@ -369,13 +369,13 @@
         "id": "transcript_026",
         "sentence": {
           "gold_count": 5,
-          "predicted_count": 4,
-          "tp": 4,
+          "predicted_count": 5,
+          "tp": 5,
           "fp": 0,
-          "fn": 1,
+          "fn": 0,
           "precision": 1.0,
-          "recall": 0.8,
-          "f1_score": 0.8889
+          "recall": 1.0,
+          "f1_score": 1.0
         },
         "token": {
           "gold_count": 48,
@@ -405,23 +405,23 @@
         "id": "transcript_030",
         "sentence": {
           "gold_count": 4,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 4,
-          "fp": 2,
+          "fp": 1,
           "fn": 0,
-          "precision": 0.6667,
+          "precision": 0.8,
           "recall": 1.0,
-          "f1_score": 0.8
+          "f1_score": 0.8889
         },
         "token": {
           "gold_count": 35,
-          "predicted_count": 43,
+          "predicted_count": 42,
           "tp": 34,
-          "fp": 9,
+          "fp": 8,
           "fn": 1,
-          "precision": 0.7907,
+          "precision": 0.8095,
           "recall": 0.9714,
-          "f1_score": 0.8718
+          "f1_score": 0.8831
         },
         "normalization": {
           "total_targets": 4,
@@ -477,23 +477,23 @@
         "id": "transcript_040",
         "sentence": {
           "gold_count": 4,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 4,
-          "fp": 2,
+          "fp": 1,
           "fn": 0,
-          "precision": 0.6667,
+          "precision": 0.8,
           "recall": 1.0,
-          "f1_score": 0.8
+          "f1_score": 0.8889
         },
         "token": {
           "gold_count": 41,
-          "predicted_count": 44,
+          "predicted_count": 43,
           "tp": 41,
-          "fp": 3,
+          "fp": 2,
           "fn": 0,
-          "precision": 0.9318,
+          "precision": 0.9535,
           "recall": 1.0,
-          "f1_score": 0.9647
+          "f1_score": 0.9762
         },
         "normalization": {
           "total_targets": 2,
@@ -549,13 +549,13 @@
         "id": "transcript_043",
         "sentence": {
           "gold_count": 5,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 5,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.8333,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9091
+          "f1_score": 1.0
         },
         "token": {
           "gold_count": 51,
@@ -621,23 +621,23 @@
         "id": "transcript_049",
         "sentence": {
           "gold_count": 5,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 5,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.8333,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9091
+          "f1_score": 1.0
         },
         "token": {
           "gold_count": 42,
-          "predicted_count": 43,
+          "predicted_count": 42,
           "tp": 42,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.9767,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9882
+          "f1_score": 1.0
         },
         "normalization": {
           "total_targets": 0,
@@ -693,23 +693,23 @@
         "id": "transcript_054",
         "sentence": {
           "gold_count": 5,
-          "predicted_count": 6,
+          "predicted_count": 5,
           "tp": 5,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.8333,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9091
+          "f1_score": 1.0
         },
         "token": {
           "gold_count": 47,
-          "predicted_count": 48,
+          "predicted_count": 47,
           "tp": 47,
-          "fp": 1,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.9792,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1_score": 0.9895
+          "f1_score": 1.0
         },
         "normalization": {
           "total_targets": 3,
@@ -808,42 +808,18 @@
         "context": "FP: 0, FN: 1"
       },
       {
-        "transcript_id": "transcript_008",
-        "input_text": "Pt presents with c/o persistent heartburn and epigastric discomfort. Upper endoscopy revealed grade B reflux esophagitis without Barrett changes. Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals. Patient reports no dysphagia, odynophagia, or black tarry stools. Follow-up scheduled in 8 weeks.",
-        "expected_result": "5 sentences: ['Pt presents with c/o persistent heartburn and epigastric discomfort.', 'Upper endoscopy revealed grade B reflux esophagitis without Barrett changes.', 'Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals.', 'Patient reports no dysphagia, odynophagia, or black tarry stools.', 'Follow-up scheduled in 8 weeks.']",
-        "predicted_result": "6 sentences: ['Pt presents with c/o persistent heartburn and epigastric discomfort.', 'Upper endoscopy revealed grade B reflux esophagitis without Barrett changes.', 'Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals.', 'Patient.', 'reports no dysphagia, odynophagia, or black tarry stools.', 'Follow-up scheduled in 8 weeks.']",
-        "error_type": "sentence-boundary error",
-        "context": "FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_008",
-        "input_text": "Pt presents with c/o persistent heartburn and epigastric discomfort. Upper endoscopy revealed grade B reflux esophagitis without Barrett changes. Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals. Patient reports no dysphagia, odynophagia, or black tarry stools. Follow-up scheduled in 8 weeks.",
-        "expected_result": "Gold tokens count: 49",
-        "predicted_result": "Predicted tokens count: 50",
-        "error_type": "unit/tokenization error",
-        "context": "Token TP: 49, FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_026",
-        "input_text": "Follow-up visit with Dr. Scott for moderate persistent asthma. Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted. Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n. Patient is not waking up at night with coughing or wheezing. Inhaler technique demonstrated satisfactorily.",
-        "expected_result": "5 sentences: ['Follow-up visit with Dr. Scott for moderate persistent asthma.', 'Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted.', 'Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n.', 'Patient is not waking up at night with coughing or wheezing.', 'Inhaler technique demonstrated satisfactorily.']",
-        "predicted_result": "4 sentences: ['Follow-up visit with Dr. Scott for moderate persistent asthma.', 'Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted.', 'Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n. Patient is not waking up at night with coughing or wheezing.', 'Inhaler technique demonstrated satisfactorily.']",
-        "error_type": "sentence-boundary error",
-        "context": "FP: 0, FN: 1"
-      },
-      {
         "transcript_id": "transcript_030",
         "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
         "expected_result": "4 sentences: ['pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular.', 'Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d.', 'pt denies syncope.', 'discharge planned pending telemetry monitor.']",
-        "predicted_result": "6 sentences: ['pt admitted with c/o recurrent palpitations.', 'vitals stable BP 128/78 mmHg HR 112 irregular.', 'Dr. Clark consulted.', 'started on Diltiazem 30 mg p.o. t.i.d..', 'pt denies syncope.', 'discharge planned pending telemetry monitor.']",
+        "predicted_result": "5 sentences: ['pt admitted with c/o recurrent palpitations.', 'vitals stable BP 128/78 mmHg HR 112 irregular.', 'Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d..', 'pt denies syncope.', 'discharge planned pending telemetry monitor.']",
         "error_type": "sentence-boundary error",
-        "context": "FP: 2, FN: 0"
+        "context": "FP: 1, FN: 0"
       },
       {
         "transcript_id": "transcript_030",
         "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
         "expected_result": "Expected normalizations: [{'shorthand': 'pt', 'canonical': 'patient'}, {'shorthand': 'c/o', 'canonical': 'complaining_of'}, {'shorthand': 'p.o.', 'canonical': 'orally'}, {'shorthand': 't.i.d.', 'canonical': 'three_times_daily'}]",
-        "predicted_result": "Normalized tokens: ['patient', 'admitted', 'complaining_of', 'recurrent', 'palpitations', '.', 'vitals', 'stable', 'BP', '128/78', 'mmhg', 'HR', '112', 'irregular', '.', 'doctor', 'clark', 'consulted', '.', 'started', 'diltiazem', '30', 'mg', 'orally', 't', '.', '.', 'd', '.', '.', 'patient', 'denies', 'syncope', '.', 'discharge', 'planned', 'pending', 'telemetry', 'monitor', '.']",
+        "predicted_result": "Normalized tokens: ['patient', 'admitted', 'complaining_of', 'recurrent', 'palpitations', '.', 'vitals', 'stable', 'BP', '128/78', 'mmhg', 'HR', '112', 'irregular', '.', 'doctor', 'clark', 'consulted', 'started', 'diltiazem', '30', 'mg', 'orally', '.', '.', '.', '.', 'patient', 'denies', 'syncope', '.', 'discharge', 'planned', 'pending', 'telemetry', 'monitor', '.']",
         "error_type": "normalization error",
         "context": "Missed: 0, Incorrect: 1"
       },
@@ -851,65 +827,25 @@
         "transcript_id": "transcript_030",
         "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
         "expected_result": "Gold tokens count: 35",
-        "predicted_result": "Predicted tokens count: 43",
+        "predicted_result": "Predicted tokens count: 42",
         "error_type": "unit/tokenization error",
-        "context": "Token TP: 34, FP: 9, FN: 1"
+        "context": "Token TP: 34, FP: 8, FN: 1"
       },
       {
         "transcript_id": "transcript_040",
         "input_text": "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h. patient denies chest tightness discharge planned pending peak flow check",
         "expected_result": "4 sentences: ['patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular.', 'Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h.', 'patient denies chest tightness.', 'discharge planned pending peak flow check.']",
-        "predicted_result": "6 sentences: ['patient admitted with c/o acute asthma exacerbation.', 'vitals stable BP 122/80 mmHg HR 94 regular.', 'Dr. Evans evaluated.', 'started on Methylprednisolone 40 mg i.v. q.8h..', 'patient denies chest tightness.', 'discharge planned pending peak flow check.']",
+        "predicted_result": "5 sentences: ['patient admitted with c/o acute asthma exacerbation.', 'vitals stable BP 122/80 mmHg HR 94 regular.', 'Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h..', 'patient denies chest tightness.', 'discharge planned pending peak flow check.']",
         "error_type": "sentence-boundary error",
-        "context": "FP: 2, FN: 0"
+        "context": "FP: 1, FN: 0"
       },
       {
         "transcript_id": "transcript_040",
         "input_text": "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h. patient denies chest tightness discharge planned pending peak flow check",
         "expected_result": "Gold tokens count: 41",
-        "predicted_result": "Predicted tokens count: 44",
-        "error_type": "unit/tokenization error",
-        "context": "Token TP: 41, FP: 3, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_043",
-        "input_text": "Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia. IPSS symptom score was 16 indicating moderate urinary symptoms. Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow. Patient denies gross hematuria, acute urinary retention, or dysuria. Follow-up clinic visit in 8 weeks.",
-        "expected_result": "5 sentences: ['Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia.', 'IPSS symptom score was 16 indicating moderate urinary symptoms.', 'Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow.', 'Patient denies gross hematuria, acute urinary retention, or dysuria.', 'Follow-up clinic visit in 8 weeks.']",
-        "predicted_result": "6 sentences: ['Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia.', 'IPSS symptom score was 16 indicating moderate urinary symptoms.', 'Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s.', 'to improve urinary flow.', 'Patient denies gross hematuria, acute urinary retention, or dysuria.', 'Follow-up clinic visit in 8 weeks.']",
-        "error_type": "abbreviation error",
-        "context": "FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_049",
-        "input_text": "Post-concussion follow-up on 11/12/2023 with Dr. Nelson. Neurological examination is non-focal without cerebellar ataxia. Patient reports no photophobia, phonophobia, or cognitive fog. Cleared for gradual return to non-contact aerobic exercise. Re-evaluation if new symptoms arise.",
-        "expected_result": "5 sentences: ['Post-concussion follow-up on 11/12/2023 with Dr. Nelson.', 'Neurological examination is non-focal without cerebellar ataxia.', 'Patient reports no photophobia, phonophobia, or cognitive fog.', 'Cleared for gradual return to non-contact aerobic exercise.', 'Re-evaluation if new symptoms arise.']",
-        "predicted_result": "6 sentences: ['Post-concussion follow-up on 11/12/2023 with Dr. Nelson.', 'Neurological examination is non-focal without cerebellar ataxia.', 'Patient.', 'reports no photophobia, phonophobia, or cognitive fog.', 'Cleared for gradual return to non-contact aerobic exercise.', 'Re-evaluation if new symptoms arise.']",
-        "error_type": "sentence-boundary error",
-        "context": "FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_049",
-        "input_text": "Post-concussion follow-up on 11/12/2023 with Dr. Nelson. Neurological examination is non-focal without cerebellar ataxia. Patient reports no photophobia, phonophobia, or cognitive fog. Cleared for gradual return to non-contact aerobic exercise. Re-evaluation if new symptoms arise.",
-        "expected_result": "Gold tokens count: 42",
         "predicted_result": "Predicted tokens count: 43",
         "error_type": "unit/tokenization error",
-        "context": "Token TP: 42, FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_054",
-        "input_text": "Hypertension regimen adjustment with Dr. Bell. Seated clinic BP was 136/86 mmHg on dual therapy. Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril. Patient reports no dizziness, lightheadedness, or muscle cramps. Basic metabolic panel ordered for 2 weeks.",
-        "expected_result": "5 sentences: ['Hypertension regimen adjustment with Dr. Bell.', 'Seated clinic BP was 136/86 mmHg on dual therapy.', 'Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril.', 'Patient reports no dizziness, lightheadedness, or muscle cramps.', 'Basic metabolic panel ordered for 2 weeks.']",
-        "predicted_result": "6 sentences: ['Hypertension regimen adjustment with Dr. Bell.', 'Seated clinic BP was 136/86 mmHg on dual therapy.', 'Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril.', 'Patient.', 'reports no dizziness, lightheadedness, or muscle cramps.', 'Basic metabolic panel ordered for 2 weeks.']",
-        "error_type": "sentence-boundary error",
-        "context": "FP: 1, FN: 0"
-      },
-      {
-        "transcript_id": "transcript_054",
-        "input_text": "Hypertension regimen adjustment with Dr. Bell. Seated clinic BP was 136/86 mmHg on dual therapy. Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril. Patient reports no dizziness, lightheadedness, or muscle cramps. Basic metabolic panel ordered for 2 weeks.",
-        "expected_result": "Gold tokens count: 47",
-        "predicted_result": "Predicted tokens count: 48",
-        "error_type": "unit/tokenization error",
-        "context": "Token TP: 47, FP: 1, FN: 0"
+        "context": "Token TP: 41, FP: 2, FN: 0"
       }
     ]
   },
@@ -1710,16 +1646,16 @@
     "sentence_boundary": {
       "metric": "Sentence Boundary F1",
       "naive_baseline": 0.7922,
-      "proposed_system": 0.9528,
-      "absolute_improvement": 0.1606,
-      "relative_improvement_pct": 20.27
+      "proposed_system": 0.9855,
+      "absolute_improvement": 0.1933,
+      "relative_improvement_pct": 24.4
     },
     "tokenization": {
       "metric": "Token F1",
       "naive_baseline": 0.7871,
-      "proposed_system": 0.9922,
-      "absolute_improvement": 0.2051,
-      "relative_improvement_pct": 26.06
+      "proposed_system": 0.9946,
+      "absolute_improvement": 0.2075,
+      "relative_improvement_pct": 26.36
     },
     "normalization": {
       "metric": "Clinical Normalization Accuracy",

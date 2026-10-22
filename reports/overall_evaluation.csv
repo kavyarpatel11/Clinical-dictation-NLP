@@ -1,9 +1,9 @@
 Category,Metric,Naive Baseline,Proposed System,Absolute Improvement
-Sentence Boundary,Precision,0.6645,0.9266,0.2621
-Sentence Boundary,Recall,0.9806,0.9806,0.0
-Sentence Boundary,F1-Score,0.7922,0.9528,0.1606
-Tokenization,Precision,0.7059,0.9854,0.2795
+Sentence Boundary,Precision,0.6645,0.9808,0.3163
+Sentence Boundary,Recall,0.9806,0.9903,0.0097
+Sentence Boundary,F1-Score,0.7922,0.9855,0.1933
+Tokenization,Precision,0.7059,0.9902,0.2843
 Tokenization,Recall,0.8893,0.999,0.1097
-Tokenization,F1-Score,0.7871,0.9922,0.2051
+Tokenization,F1-Score,0.7871,0.9946,0.2075
 Clinical Normalization,Accuracy,0.0,0.9831,0.9831
 Negation Preservation,Accuracy,0.5143,1.0,0.4857

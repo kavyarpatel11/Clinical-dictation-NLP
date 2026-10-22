@@ -15,7 +15,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from nltk.tokenize.punkt import PunktTrainer
+from nltk.tokenize.punkt import PunktTrainer, PunktSentenceTokenizer
 
 try:
     from src.preprocessing import (
@@ -29,6 +29,7 @@ try:
         protect_medical_abbreviations,
         restore_protected_text,
         create_clinical_punkt_tokenizer,
+        CLINICAL_ABBREVIATIONS,
         CLINICAL_PUNKT_TOKENIZER,
         CLINICAL_SPACY_NLP,
         CLINICAL_NLTK_TOKENIZER
@@ -45,6 +46,7 @@ except ModuleNotFoundError:
         protect_medical_abbreviations,
         restore_protected_text,
         create_clinical_punkt_tokenizer,
+        CLINICAL_ABBREVIATIONS,
         CLINICAL_PUNKT_TOKENIZER,
         CLINICAL_SPACY_NLP,
         CLINICAL_NLTK_TOKENIZER
@@ -100,11 +102,16 @@ class ClinicalSentenceSegmenter:
 
         # Rebuild PunktSentenceTokenizer with learned parameters & clinical abbreviations
         params = trainer.get_params()
+        for ab in CLINICAL_ABBREVIATIONS:
+            clean_ab = ab.replace(r"\.", ".").rstrip(".").lower()
+            params.abbrev_types.add(clean_ab)
+            params.abbrev_types.add(clean_ab.replace(".", ""))
         for ab in self.abbreviation_lexicon:
             clean_ab = ab.replace(r"\.", ".").rstrip(".").lower()
             params.abbrev_types.add(clean_ab)
+            params.abbrev_types.add(clean_ab.replace(".", ""))
 
-        self.punkt_tokenizer = create_clinical_punkt_tokenizer(self.abbreviation_lexicon)
+        self.punkt_tokenizer = PunktSentenceTokenizer(params)
         return self
 
     def segment(self, transcript: str, engine: Optional[str] = None) -> List[str]:
