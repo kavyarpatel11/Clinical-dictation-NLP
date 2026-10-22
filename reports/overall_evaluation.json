@@ -1,0 +1,1739 @@
+{
+  "dataset": {
+    "total_transcripts": 70,
+    "development_transcripts": 49,
+    "dev_transcripts": 49,
+    "test_transcripts": 21,
+    "total_corpus_sentences": 342,
+    "total_corpus_tokens": 3392
+  },
+  "proposed_system": {
+    "system_name": "Proposed Clinical NLP Pipeline",
+    "sentence": {
+      "true_positives": 101,
+      "false_positives": 8,
+      "false_negatives": 2,
+      "precision": 0.9266,
+      "recall": 0.9806,
+      "f1_score": 0.9528,
+      "total_gold_boundaries": 103,
+      "total_predicted_boundaries": 109
+    },
+    "token": {
+      "true_positives": 1011,
+      "false_positives": 15,
+      "false_negatives": 1,
+      "precision": 0.9854,
+      "recall": 0.999,
+      "f1_score": 0.9922
+    },
+    "normalization": {
+      "total_targets": 59,
+      "correct": 58,
+      "incorrect": 1,
+      "missed": 0,
+      "accuracy": 0.9831
+    },
+    "negation": {
+      "total_cases": 35,
+      "preserved": 35,
+      "removed": 0,
+      "accuracy": 1.0
+    },
+    "per_transcript": [
+      {
+        "id": "transcript_005",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 51,
+          "tp": 51,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 2,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_007",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1_score": 0.8889
+        },
+        "token": {
+          "gold_count": 53,
+          "predicted_count": 53,
+          "tp": 53,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_008",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 49,
+          "predicted_count": 50,
+          "tp": 49,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.98,
+          "recall": 1.0,
+          "f1_score": 0.9899
+        },
+        "normalization": {
+          "total_targets": 5,
+          "correct": 5,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_009",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 50,
+          "predicted_count": 50,
+          "tp": 50,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_016",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 52,
+          "tp": 52,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 3,
+          "preserved": 3,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_017",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 49,
+          "predicted_count": 49,
+          "tp": 49,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 5,
+          "correct": 5,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_019",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 48,
+          "tp": 48,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_021",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 47,
+          "predicted_count": 47,
+          "tp": 47,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_023",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 53,
+          "predicted_count": 53,
+          "tp": 53,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 3,
+          "correct": 3,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_026",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1_score": 0.8889
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 48,
+          "tp": 48,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 2,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_030",
+        "sentence": {
+          "gold_count": 4,
+          "predicted_count": 6,
+          "tp": 4,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1_score": 0.8
+        },
+        "token": {
+          "gold_count": 35,
+          "predicted_count": 43,
+          "tp": 34,
+          "fp": 9,
+          "fn": 1,
+          "precision": 0.7907,
+          "recall": 0.9714,
+          "f1_score": 0.8718
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 3,
+          "incorrect": 1,
+          "missed": 0,
+          "accuracy": 0.75
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_034",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 50,
+          "predicted_count": 50,
+          "tp": 50,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_040",
+        "sentence": {
+          "gold_count": 4,
+          "predicted_count": 6,
+          "tp": 4,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1_score": 0.8
+        },
+        "token": {
+          "gold_count": 41,
+          "predicted_count": 44,
+          "tp": 41,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.9318,
+          "recall": 1.0,
+          "f1_score": 0.9647
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 2,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_041",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 48,
+          "tp": 48,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 1,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_043",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 51,
+          "tp": 51,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 2,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_045",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 51,
+          "tp": 51,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 0,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_049",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 42,
+          "predicted_count": 43,
+          "tp": 42,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9767,
+          "recall": 1.0,
+          "f1_score": 0.9882
+        },
+        "normalization": {
+          "total_targets": 0,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_051",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 43,
+          "predicted_count": 43,
+          "tp": 43,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 1,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_054",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 47,
+          "predicted_count": 48,
+          "tp": 47,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9792,
+          "recall": 1.0,
+          "f1_score": 0.9895
+        },
+        "normalization": {
+          "total_targets": 3,
+          "correct": 3,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_063",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 52,
+          "tp": 52,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 4,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 3,
+          "preserved": 3,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_067",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 52,
+          "tp": 52,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 1,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 1.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "transcript_id": "transcript_007",
+        "input_text": "Consultation with Dr. Chen for CKD stage 3b. Serum creatinine measured at 2.1 mg/dL with BUN 34 mg/dL and eGFR 38.5 mL/min. Blood pressure recorded at 134/82 mmHg in right arm. Patient denies gross hematuria or dysuria. Rx renewed for Losartan 50 mg Tab. p.o. q.d. without modification.",
+        "expected_result": "5 sentences: ['Consultation with Dr. Chen for CKD stage 3b.', 'Serum creatinine measured at 2.1 mg/dL with BUN 34 mg/dL and eGFR 38.5 mL/min.', 'Blood pressure recorded at 134/82 mmHg in right arm.', 'Patient denies gross hematuria or dysuria.', 'Rx renewed for Losartan 50 mg Tab. p.o. q.d. without modification.']",
+        "predicted_result": "4 sentences: ['Consultation with Dr. Chen for CKD stage 3b.', 'Serum creatinine measured at 2.1 mg/dL with BUN 34 mg/dL and eGFR 38.5 mL/min. Blood pressure recorded at 134/82 mmHg in right arm.', 'Patient denies gross hematuria or dysuria.', 'Rx renewed for Losartan 50 mg Tab. p.o. q.d. without modification.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 0, FN: 1"
+      },
+      {
+        "transcript_id": "transcript_008",
+        "input_text": "Pt presents with c/o persistent heartburn and epigastric discomfort. Upper endoscopy revealed grade B reflux esophagitis without Barrett changes. Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals. Patient reports no dysphagia, odynophagia, or black tarry stools. Follow-up scheduled in 8 weeks.",
+        "expected_result": "5 sentences: ['Pt presents with c/o persistent heartburn and epigastric discomfort.', 'Upper endoscopy revealed grade B reflux esophagitis without Barrett changes.', 'Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals.', 'Patient reports no dysphagia, odynophagia, or black tarry stools.', 'Follow-up scheduled in 8 weeks.']",
+        "predicted_result": "6 sentences: ['Pt presents with c/o persistent heartburn and epigastric discomfort.', 'Upper endoscopy revealed grade B reflux esophagitis without Barrett changes.', 'Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals.', 'Patient.', 'reports no dysphagia, odynophagia, or black tarry stools.', 'Follow-up scheduled in 8 weeks.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_008",
+        "input_text": "Pt presents with c/o persistent heartburn and epigastric discomfort. Upper endoscopy revealed grade B reflux esophagitis without Barrett changes. Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals. Patient reports no dysphagia, odynophagia, or black tarry stools. Follow-up scheduled in 8 weeks.",
+        "expected_result": "Gold tokens count: 49",
+        "predicted_result": "Predicted tokens count: 50",
+        "error_type": "unit/tokenization error",
+        "context": "Token TP: 49, FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_026",
+        "input_text": "Follow-up visit with Dr. Scott for moderate persistent asthma. Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted. Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n. Patient is not waking up at night with coughing or wheezing. Inhaler technique demonstrated satisfactorily.",
+        "expected_result": "5 sentences: ['Follow-up visit with Dr. Scott for moderate persistent asthma.', 'Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted.', 'Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n.', 'Patient is not waking up at night with coughing or wheezing.', 'Inhaler technique demonstrated satisfactorily.']",
+        "predicted_result": "4 sentences: ['Follow-up visit with Dr. Scott for moderate persistent asthma.', 'Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted.', 'Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n. Patient is not waking up at night with coughing or wheezing.', 'Inhaler technique demonstrated satisfactorily.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 0, FN: 1"
+      },
+      {
+        "transcript_id": "transcript_030",
+        "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
+        "expected_result": "4 sentences: ['pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular.', 'Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d.', 'pt denies syncope.', 'discharge planned pending telemetry monitor.']",
+        "predicted_result": "6 sentences: ['pt admitted with c/o recurrent palpitations.', 'vitals stable BP 128/78 mmHg HR 112 irregular.', 'Dr. Clark consulted.', 'started on Diltiazem 30 mg p.o. t.i.d..', 'pt denies syncope.', 'discharge planned pending telemetry monitor.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 2, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_030",
+        "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
+        "expected_result": "Expected normalizations: [{'shorthand': 'pt', 'canonical': 'patient'}, {'shorthand': 'c/o', 'canonical': 'complaining_of'}, {'shorthand': 'p.o.', 'canonical': 'orally'}, {'shorthand': 't.i.d.', 'canonical': 'three_times_daily'}]",
+        "predicted_result": "Normalized tokens: ['patient', 'admitted', 'complaining_of', 'recurrent', 'palpitations', '.', 'vitals', 'stable', 'BP', '128/78', 'mmhg', 'HR', '112', 'irregular', '.', 'doctor', 'clark', 'consulted', '.', 'started', 'diltiazem', '30', 'mg', 'orally', 't', '.', '.', 'd', '.', '.', 'patient', 'denies', 'syncope', '.', 'discharge', 'planned', 'pending', 'telemetry', 'monitor', '.']",
+        "error_type": "normalization error",
+        "context": "Missed: 0, Incorrect: 1"
+      },
+      {
+        "transcript_id": "transcript_030",
+        "input_text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
+        "expected_result": "Gold tokens count: 35",
+        "predicted_result": "Predicted tokens count: 43",
+        "error_type": "unit/tokenization error",
+        "context": "Token TP: 34, FP: 9, FN: 1"
+      },
+      {
+        "transcript_id": "transcript_040",
+        "input_text": "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h. patient denies chest tightness discharge planned pending peak flow check",
+        "expected_result": "4 sentences: ['patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular.', 'Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h.', 'patient denies chest tightness.', 'discharge planned pending peak flow check.']",
+        "predicted_result": "6 sentences: ['patient admitted with c/o acute asthma exacerbation.', 'vitals stable BP 122/80 mmHg HR 94 regular.', 'Dr. Evans evaluated.', 'started on Methylprednisolone 40 mg i.v. q.8h..', 'patient denies chest tightness.', 'discharge planned pending peak flow check.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 2, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_040",
+        "input_text": "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h. patient denies chest tightness discharge planned pending peak flow check",
+        "expected_result": "Gold tokens count: 41",
+        "predicted_result": "Predicted tokens count: 44",
+        "error_type": "unit/tokenization error",
+        "context": "Token TP: 41, FP: 3, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_043",
+        "input_text": "Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia. IPSS symptom score was 16 indicating moderate urinary symptoms. Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow. Patient denies gross hematuria, acute urinary retention, or dysuria. Follow-up clinic visit in 8 weeks.",
+        "expected_result": "5 sentences: ['Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia.', 'IPSS symptom score was 16 indicating moderate urinary symptoms.', 'Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow.', 'Patient denies gross hematuria, acute urinary retention, or dysuria.', 'Follow-up clinic visit in 8 weeks.']",
+        "predicted_result": "6 sentences: ['Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia.', 'IPSS symptom score was 16 indicating moderate urinary symptoms.', 'Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s.', 'to improve urinary flow.', 'Patient denies gross hematuria, acute urinary retention, or dysuria.', 'Follow-up clinic visit in 8 weeks.']",
+        "error_type": "abbreviation error",
+        "context": "FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_049",
+        "input_text": "Post-concussion follow-up on 11/12/2023 with Dr. Nelson. Neurological examination is non-focal without cerebellar ataxia. Patient reports no photophobia, phonophobia, or cognitive fog. Cleared for gradual return to non-contact aerobic exercise. Re-evaluation if new symptoms arise.",
+        "expected_result": "5 sentences: ['Post-concussion follow-up on 11/12/2023 with Dr. Nelson.', 'Neurological examination is non-focal without cerebellar ataxia.', 'Patient reports no photophobia, phonophobia, or cognitive fog.', 'Cleared for gradual return to non-contact aerobic exercise.', 'Re-evaluation if new symptoms arise.']",
+        "predicted_result": "6 sentences: ['Post-concussion follow-up on 11/12/2023 with Dr. Nelson.', 'Neurological examination is non-focal without cerebellar ataxia.', 'Patient.', 'reports no photophobia, phonophobia, or cognitive fog.', 'Cleared for gradual return to non-contact aerobic exercise.', 'Re-evaluation if new symptoms arise.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_049",
+        "input_text": "Post-concussion follow-up on 11/12/2023 with Dr. Nelson. Neurological examination is non-focal without cerebellar ataxia. Patient reports no photophobia, phonophobia, or cognitive fog. Cleared for gradual return to non-contact aerobic exercise. Re-evaluation if new symptoms arise.",
+        "expected_result": "Gold tokens count: 42",
+        "predicted_result": "Predicted tokens count: 43",
+        "error_type": "unit/tokenization error",
+        "context": "Token TP: 42, FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_054",
+        "input_text": "Hypertension regimen adjustment with Dr. Bell. Seated clinic BP was 136/86 mmHg on dual therapy. Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril. Patient reports no dizziness, lightheadedness, or muscle cramps. Basic metabolic panel ordered for 2 weeks.",
+        "expected_result": "5 sentences: ['Hypertension regimen adjustment with Dr. Bell.', 'Seated clinic BP was 136/86 mmHg on dual therapy.', 'Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril.', 'Patient reports no dizziness, lightheadedness, or muscle cramps.', 'Basic metabolic panel ordered for 2 weeks.']",
+        "predicted_result": "6 sentences: ['Hypertension regimen adjustment with Dr. Bell.', 'Seated clinic BP was 136/86 mmHg on dual therapy.', 'Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril.', 'Patient.', 'reports no dizziness, lightheadedness, or muscle cramps.', 'Basic metabolic panel ordered for 2 weeks.']",
+        "error_type": "sentence-boundary error",
+        "context": "FP: 1, FN: 0"
+      },
+      {
+        "transcript_id": "transcript_054",
+        "input_text": "Hypertension regimen adjustment with Dr. Bell. Seated clinic BP was 136/86 mmHg on dual therapy. Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril. Patient reports no dizziness, lightheadedness, or muscle cramps. Basic metabolic panel ordered for 2 weeks.",
+        "expected_result": "Gold tokens count: 47",
+        "predicted_result": "Predicted tokens count: 48",
+        "error_type": "unit/tokenization error",
+        "context": "Token TP: 47, FP: 1, FN: 0"
+      }
+    ]
+  },
+  "naive_baseline": {
+    "system_name": "Naive Regex Baseline",
+    "sentence": {
+      "true_positives": 101,
+      "false_positives": 51,
+      "false_negatives": 2,
+      "precision": 0.6645,
+      "recall": 0.9806,
+      "f1_score": 0.7922,
+      "total_gold_boundaries": 103,
+      "total_predicted_boundaries": 152
+    },
+    "token": {
+      "true_positives": 900,
+      "false_positives": 375,
+      "false_negatives": 112,
+      "precision": 0.7059,
+      "recall": 0.8893,
+      "f1_score": 0.7871
+    },
+    "normalization": {
+      "total_targets": 59,
+      "correct": 0,
+      "incorrect": 0,
+      "missed": 59,
+      "accuracy": 0.0
+    },
+    "negation": {
+      "total_cases": 35,
+      "preserved": 18,
+      "removed": 17,
+      "accuracy": 0.5143
+    },
+    "per_transcript": [
+      {
+        "id": "transcript_005",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 8,
+          "tp": 5,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.625,
+          "recall": 1.0,
+          "f1_score": 0.7692
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 68,
+          "tp": 44,
+          "fp": 24,
+          "fn": 7,
+          "precision": 0.6471,
+          "recall": 0.8627,
+          "f1_score": 0.7395
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 2,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 0,
+          "removed": 1,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "id": "transcript_007",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 53,
+          "predicted_count": 73,
+          "tp": 42,
+          "fp": 31,
+          "fn": 11,
+          "precision": 0.5753,
+          "recall": 0.7925,
+          "f1_score": 0.6667
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_008",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 8,
+          "tp": 5,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.625,
+          "recall": 1.0,
+          "f1_score": 0.7692
+        },
+        "token": {
+          "gold_count": 49,
+          "predicted_count": 62,
+          "tp": 44,
+          "fp": 18,
+          "fn": 5,
+          "precision": 0.7097,
+          "recall": 0.898,
+          "f1_score": 0.7928
+        },
+        "normalization": {
+          "total_targets": 5,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 5,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 0,
+          "removed": 2,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "id": "transcript_009",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 10,
+          "tp": 5,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667
+        },
+        "token": {
+          "gold_count": 50,
+          "predicted_count": 67,
+          "tp": 45,
+          "fp": 22,
+          "fn": 5,
+          "precision": 0.6716,
+          "recall": 0.9,
+          "f1_score": 0.7692
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_016",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 8,
+          "tp": 5,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.625,
+          "recall": 1.0,
+          "f1_score": 0.7692
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 59,
+          "tp": 49,
+          "fp": 10,
+          "fn": 3,
+          "precision": 0.8305,
+          "recall": 0.9423,
+          "f1_score": 0.8829
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 3,
+          "preserved": 1,
+          "removed": 2,
+          "accuracy": 0.3333
+        }
+      },
+      {
+        "id": "transcript_017",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 49,
+          "predicted_count": 67,
+          "tp": 43,
+          "fp": 24,
+          "fn": 6,
+          "precision": 0.6418,
+          "recall": 0.8776,
+          "f1_score": 0.7414
+        },
+        "normalization": {
+          "total_targets": 5,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 5,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_019",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 7,
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7143,
+          "recall": 1.0,
+          "f1_score": 0.8333
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 58,
+          "tp": 45,
+          "fp": 13,
+          "fn": 3,
+          "precision": 0.7759,
+          "recall": 0.9375,
+          "f1_score": 0.8491
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_021",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 47,
+          "predicted_count": 61,
+          "tp": 41,
+          "fp": 20,
+          "fn": 6,
+          "precision": 0.6721,
+          "recall": 0.8723,
+          "f1_score": 0.7592
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_023",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "token": {
+          "gold_count": 53,
+          "predicted_count": 64,
+          "tp": 48,
+          "fp": 16,
+          "fn": 5,
+          "precision": 0.75,
+          "recall": 0.9057,
+          "f1_score": 0.8205
+        },
+        "normalization": {
+          "total_targets": 3,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 3,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 2,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_026",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 7,
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7143,
+          "recall": 1.0,
+          "f1_score": 0.8333
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 70,
+          "tp": 40,
+          "fp": 30,
+          "fn": 8,
+          "precision": 0.5714,
+          "recall": 0.8333,
+          "f1_score": 0.6779
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 2,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 0,
+          "removed": 1,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "id": "transcript_030",
+        "sentence": {
+          "gold_count": 4,
+          "predicted_count": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1_score": 0.75
+        },
+        "token": {
+          "gold_count": 35,
+          "predicted_count": 45,
+          "tp": 30,
+          "fp": 15,
+          "fn": 5,
+          "precision": 0.6667,
+          "recall": 0.8571,
+          "f1_score": 0.75
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_034",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 50,
+          "predicted_count": 62,
+          "tp": 45,
+          "fp": 17,
+          "fn": 5,
+          "precision": 0.7258,
+          "recall": 0.9,
+          "f1_score": 0.8036
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_040",
+        "sentence": {
+          "gold_count": 4,
+          "predicted_count": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1_score": 0.75
+        },
+        "token": {
+          "gold_count": 41,
+          "predicted_count": 46,
+          "tp": 36,
+          "fp": 10,
+          "fn": 5,
+          "precision": 0.7826,
+          "recall": 0.878,
+          "f1_score": 0.8276
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 2,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_041",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 48,
+          "predicted_count": 59,
+          "tp": 43,
+          "fp": 16,
+          "fn": 5,
+          "precision": 0.7288,
+          "recall": 0.8958,
+          "f1_score": 0.8037
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 1,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_043",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 65,
+          "tp": 45,
+          "fp": 20,
+          "fn": 6,
+          "precision": 0.6923,
+          "recall": 0.8824,
+          "f1_score": 0.7759
+        },
+        "normalization": {
+          "total_targets": 2,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 2,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 1,
+          "removed": 0,
+          "accuracy": 1.0
+        }
+      },
+      {
+        "id": "transcript_045",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 51,
+          "predicted_count": 64,
+          "tp": 45,
+          "fp": 19,
+          "fn": 6,
+          "precision": 0.7031,
+          "recall": 0.8824,
+          "f1_score": 0.7826
+        },
+        "normalization": {
+          "total_targets": 0,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_049",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 42,
+          "predicted_count": 57,
+          "tp": 35,
+          "fp": 22,
+          "fn": 7,
+          "precision": 0.614,
+          "recall": 0.8333,
+          "f1_score": 0.707
+        },
+        "normalization": {
+          "total_targets": 0,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 0,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 0,
+          "removed": 2,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "id": "transcript_051",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 43,
+          "predicted_count": 54,
+          "tp": 39,
+          "fp": 15,
+          "fn": 4,
+          "precision": 0.7222,
+          "recall": 0.907,
+          "f1_score": 0.8041
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 1,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      },
+      {
+        "id": "transcript_054",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 9,
+          "tp": 5,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1_score": 0.7143
+        },
+        "token": {
+          "gold_count": 47,
+          "predicted_count": 57,
+          "tp": 42,
+          "fp": 15,
+          "fn": 5,
+          "precision": 0.7368,
+          "recall": 0.8936,
+          "f1_score": 0.8077
+        },
+        "normalization": {
+          "total_targets": 3,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 3,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 1,
+          "preserved": 0,
+          "removed": 1,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "id": "transcript_063",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 7,
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7143,
+          "recall": 1.0,
+          "f1_score": 0.8333
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 62,
+          "tp": 49,
+          "fp": 13,
+          "fn": 3,
+          "precision": 0.7903,
+          "recall": 0.9423,
+          "f1_score": 0.8596
+        },
+        "normalization": {
+          "total_targets": 4,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 4,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 3,
+          "preserved": 2,
+          "removed": 1,
+          "accuracy": 0.6667
+        }
+      },
+      {
+        "id": "transcript_067",
+        "sentence": {
+          "gold_count": 5,
+          "predicted_count": 6,
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1_score": 0.9091
+        },
+        "token": {
+          "gold_count": 52,
+          "predicted_count": 55,
+          "tp": 50,
+          "fp": 5,
+          "fn": 2,
+          "precision": 0.9091,
+          "recall": 0.9615,
+          "f1_score": 0.9346
+        },
+        "normalization": {
+          "total_targets": 1,
+          "correct": 0,
+          "incorrect": 0,
+          "missed": 1,
+          "accuracy": 0.0
+        },
+        "negation": {
+          "total_cases": 2,
+          "preserved": 1,
+          "removed": 1,
+          "accuracy": 0.5
+        }
+      }
+    ],
+    "errors": []
+  },
+  "comparison_metrics": {
+    "sentence_boundary": {
+      "metric": "Sentence Boundary F1",
+      "naive_baseline": 0.7922,
+      "proposed_system": 0.9528,
+      "absolute_improvement": 0.1606,
+      "relative_improvement_pct": 20.27
+    },
+    "tokenization": {
+      "metric": "Token F1",
+      "naive_baseline": 0.7871,
+      "proposed_system": 0.9922,
+      "absolute_improvement": 0.2051,
+      "relative_improvement_pct": 26.06
+    },
+    "normalization": {
+      "metric": "Clinical Normalization Accuracy",
+      "naive_baseline": 0.0,
+      "proposed_system": 0.9831,
+      "absolute_improvement": 0.9831,
+      "relative_improvement_pct": 98.31
+    },
+    "negation_preservation": {
+      "metric": "Negation Preservation Accuracy",
+      "naive_baseline": 0.5143,
+      "proposed_system": 1.0,
+      "absolute_improvement": 0.4857,
+      "relative_improvement_pct": 94.44
+    }
+  }
+}

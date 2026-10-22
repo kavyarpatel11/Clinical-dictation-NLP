@@ -1,0 +1,8592 @@
+[
+  {
+    "id": "transcript_001",
+    "text": "Patient was evaluated today by Dr. Robert Smith at the outpatient cardiology clinic. Patient has a prior hx of hypertension and presents with mild fatigue. Rx was adjusted to include Lisinopril 10 mg p.o. q.d. along with Tab. Aspirin 81 mg daily. Dr. Smith advised follow-up in 4 weeks.",
+    "expected_sentences": [
+      "Patient was evaluated today by Dr. Robert Smith at the outpatient cardiology clinic.",
+      "Patient has a prior hx of hypertension and presents with mild fatigue.",
+      "Rx was adjusted to include Lisinopril 10 mg p.o. q.d. along with Tab. Aspirin 81 mg daily.",
+      "Dr. Smith advised follow-up in 4 weeks."
+    ],
+    "sentence_count": 4,
+    "annotations": {
+      "protected_abbreviations": [
+        "Dr.",
+        "hx",
+        "Rx",
+        "p.o.",
+        "q.d.",
+        "Tab."
+      ],
+      "dosages": [
+        "10 mg",
+        "81 mg"
+      ],
+      "entities": [
+        {
+          "text": "Dr. Robert Smith",
+          "type": "PROVIDER"
+        },
+        {
+          "text": "hypertension",
+          "type": "CONDITION"
+        },
+        {
+          "text": "Lisinopril",
+          "type": "MEDICATION"
+        },
+        {
+          "text": "Aspirin",
+          "type": "MEDICATION"
+        }
+      ],
+      "abbreviations": [
+        "Dr.",
+        "hx",
+        "Rx",
+        "p.o.",
+        "q.d.",
+        "Tab."
+      ],
+      "medical_shorthand": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "medication_dosages": [
+        "10 mg",
+        "81 mg"
+      ],
+      "units": [],
+      "blood_pressure": [],
+      "clinical_negations": [],
+      "expected_normalizations": [],
+      "dictation_style": "punctuated"
+    },
+    "expected_sentence_boundaries": [
+      83,
+      154,
+      245,
+      285
+    ],
+    "expected_tokens": [
+      "Patient",
+      "was",
+      "evaluated",
+      "today",
+      "by",
+      "Dr.",
+      "Robert",
+      "Smith",
+      "at",
+      "the",
+      "outpatient",
+      "cardiology",
+      "clinic",
+      ".",
+      "Patient",
+      "has",
+      "a",
+      "prior",
+      "hx",
+      "of",
+      "hypertension",
+      "and",
+      "presents",
+      "with",
+      "mild",
+      "fatigue",
+      ".",
+      "Rx",
+      "was",
+      "adjusted",
+      "to",
+      "include",
+      "Lisinopril",
+      "10",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "along",
+      "with",
+      "Tab.",
+      "Aspirin",
+      "81",
+      "mg",
+      "daily",
+      ".",
+      "Dr.",
+      "Smith",
+      "advised",
+      "follow-up",
+      "in",
+      "4",
+      "weeks",
+      "."
+    ]
+  },
+  {
+    "id": "transcript_002",
+    "text": "Exam date 14/11/2023. Patient presents for routine diabetic checkup. Vital signs: BP 138/84 mmHg, HR 74 bpm, weight 78.5 kg. Laboratory results reveal fasting blood glucose 126.4 mg/dL and HbA1c 6.8%. Prescribed Metformin 500 mg p.o. b.i.d. and adjusted insulin glargine to 12.5 units subcutaneous at bedtime. Next appointment scheduled for 15/12/2023.",
+    "expected_sentences": [
+      "Exam date 14/11/2023.",
+      "Patient presents for routine diabetic checkup.",
+      "Vital signs: BP 138/84 mmHg, HR 74 bpm, weight 78.5 kg.",
+      "Laboratory results reveal fasting blood glucose 126.4 mg/dL and HbA1c 6.8%.",
+      "Prescribed Metformin 500 mg p.o. b.i.d. and adjusted insulin glargine to 12.5 units subcutaneous at bedtime.",
+      "Next appointment scheduled for 15/12/2023."
+    ],
+    "sentence_count": 6,
+    "annotations": {
+      "dates": [
+        "14/11/2023",
+        "15/12/2023"
+      ],
+      "blood_pressure": [
+        "138/84 mmHg"
+      ],
+      "decimal_values": [
+        "78.5",
+        "126.4",
+        "6.8%",
+        "12.5"
+      ],
+      "abbreviations": [
+        "BP",
+        "HR",
+        "bpm",
+        "mg/dL",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [],
+      "decimal_measurements": [
+        "78.5",
+        "126.4",
+        "6.8%",
+        "12.5"
+      ],
+      "medication_dosages": [],
+      "units": [],
+      "clinical_negations": [],
+      "expected_normalizations": [],
+      "dictation_style": "punctuated"
+    },
+    "expected_sentence_boundaries": [
+      20,
+      67,
+      123,
+      199,
+      308,
+      351
+    ],
+    "expected_tokens": [
+      "Exam",
+      "date",
+      "14/11/2023",
+      ".",
+      "Patient",
+      "presents",
+      "for",
+      "routine",
+      "diabetic",
+      "checkup",
+      ".",
+      "Vital",
+      "signs",
+      ":",
+      "BP",
+      "138/84",
+      "mmHg",
+      ",",
+      "HR",
+      "74",
+      "bpm",
+      ",",
+      "weight",
+      "78.5",
+      "kg",
+      ".",
+      "Laboratory",
+      "results",
+      "reveal",
+      "fasting",
+      "blood",
+      "glucose",
+      "126.4",
+      "mg/dL",
+      "and",
+      "HbA1c",
+      "6.8%",
+      ".",
+      "Prescribed",
+      "Metformin",
+      "500",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "and",
+      "adjusted",
+      "insulin",
+      "glargine",
+      "to",
+      "12.5",
+      "units",
+      "subcutaneous",
+      "at",
+      "bedtime",
+      ".",
+      "Next",
+      "appointment",
+      "scheduled",
+      "for",
+      "15/12/2023",
+      "."
+    ]
+  },
+  {
+    "id": "transcript_003",
+    "text": "pt admitted with c/o acute shortness of breath and wheezing s/p nebulizer treatment in ED vitals stable BP 130/85 mmHg HR 88 regular Dr. Johnson consulted started on Prednisone 40 mg p.o. q.i.d. for 5 days pt denies chest pain or diaphoresis discharge planned pending lab review",
+    "expected_sentences": [
+      "pt admitted with c/o acute shortness of breath and wheezing s/p nebulizer treatment in ED vitals stable BP 130/85 mmHg HR 88 regular.",
+      "Dr. Johnson consulted started on Prednisone 40 mg p.o. q.i.d. for 5 days.",
+      "pt denies chest pain or diaphoresis.",
+      "discharge planned pending lab review."
+    ],
+    "sentence_count": 4,
+    "annotations": {
+      "abbreviations": [
+        "pt",
+        "c/o",
+        "s/p",
+        "ED",
+        "BP",
+        "HR",
+        "Dr.",
+        "p.o.",
+        "q.i.d."
+      ],
+      "negations": [
+        "denies"
+      ],
+      "dosages": [
+        "40 mg"
+      ],
+      "medical_shorthand": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "medication_dosages": [
+        "40 mg"
+      ],
+      "units": [],
+      "blood_pressure": [],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [],
+      "dictation_style": "unpunctuated"
+    },
+    "expected_sentence_boundaries": [
+      132,
+      205,
+      241,
+      278
+    ],
+    "expected_tokens": [
+      "pt",
+      "admitted",
+      "with",
+      "c/o",
+      "acute",
+      "shortness",
+      "of",
+      "breath",
+      "and",
+      "wheezing",
+      "s/p",
+      "nebulizer",
+      "treatment",
+      "in",
+      "ED",
+      "vitals",
+      "stable",
+      "BP",
+      "130/85",
+      "mmHg",
+      "HR",
+      "88",
+      "regular",
+      ".",
+      "Dr.",
+      "Johnson",
+      "consulted",
+      "started",
+      "on",
+      "Prednisone",
+      "40",
+      "mg",
+      "p.o.",
+      "q.i.d.",
+      "for",
+      "5",
+      "days",
+      ".",
+      "pt",
+      "denies",
+      "chest",
+      "pain",
+      "or",
+      "diaphoresis",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "lab",
+      "review",
+      "."
+    ]
+  },
+  {
+    "id": "transcript_004",
+    "text": "Follow-up visit with Dr. Patel for post-MI management. Patient reports no recurrence of angina or exertional dyspnea. Current BP 118/72 mmHg with regular heart rate 64 bpm. Prescribed Atorvastatin 80 mg p.o. q.d. and Metoprolol tartrate 25 mg p.o. b.i.d. Next lipid panel scheduled in 6 weeks.",
+    "expected_sentences": [
+      "Follow-up visit with Dr. Patel for post-MI management.",
+      "Patient reports no recurrence of angina or exertional dyspnea.",
+      "Current BP 118/72 mmHg with regular heart rate 64 bpm.",
+      "Prescribed Atorvastatin 80 mg p.o. q.d. and Metoprolol tartrate 25 mg p.o. b.i.d.",
+      "Next lipid panel scheduled in 6 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      53,
+      116,
+      171,
+      253,
+      292
+    ],
+    "expected_tokens": [
+      "Follow-up",
+      "visit",
+      "with",
+      "Dr.",
+      "Patel",
+      "for",
+      "post-MI",
+      "management",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "recurrence",
+      "of",
+      "angina",
+      "or",
+      "exertional",
+      "dyspnea",
+      ".",
+      "Current",
+      "BP",
+      "118/72",
+      "mmHg",
+      "with",
+      "regular",
+      "heart",
+      "rate",
+      "64",
+      "bpm",
+      ".",
+      "Prescribed",
+      "Atorvastatin",
+      "80",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "and",
+      "Metoprolol",
+      "tartrate",
+      "25",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "Next",
+      "lipid",
+      "panel",
+      "scheduled",
+      "in",
+      "6",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "MI",
+        "BP",
+        "bpm",
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "80 mg",
+        "25 mg"
+      ],
+      "medication_dosages": [
+        "80 mg",
+        "25 mg"
+      ],
+      "units": [
+        "mmHg",
+        "bpm",
+        "mg"
+      ],
+      "blood_pressure": [
+        "118/72 mmHg"
+      ],
+      "negations": [
+        "no"
+      ],
+      "clinical_negations": [
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_005",
+    "text": "Pt evaluated for primary hypothyroidism by Dr. Evans. Laboratory findings demonstrate serum TSH 2.8 mIU/L and free T4 1.1 ng/dL. Patient is not experiencing cold intolerance or severe constipation. Adjusted Levothyroxine to 75 mcg p.o. q.a.m. on an empty stomach. Return to clinic in 3 months.",
+    "expected_sentences": [
+      "Pt evaluated for primary hypothyroidism by Dr. Evans.",
+      "Laboratory findings demonstrate serum TSH 2.8 mIU/L and free T4 1.1 ng/dL.",
+      "Patient is not experiencing cold intolerance or severe constipation.",
+      "Adjusted Levothyroxine to 75 mcg p.o. q.a.m. on an empty stomach.",
+      "Return to clinic in 3 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      52,
+      127,
+      196,
+      262,
+      292
+    ],
+    "expected_tokens": [
+      "Pt",
+      "evaluated",
+      "for",
+      "primary",
+      "hypothyroidism",
+      "by",
+      "Dr.",
+      "Evans",
+      ".",
+      "Laboratory",
+      "findings",
+      "demonstrate",
+      "serum",
+      "TSH",
+      "2.8",
+      "mIU/L",
+      "and",
+      "free",
+      "T4",
+      "1.1",
+      "ng/dL",
+      ".",
+      "Patient",
+      "is",
+      "not",
+      "experiencing",
+      "cold",
+      "intolerance",
+      "or",
+      "severe",
+      "constipation",
+      ".",
+      "Adjusted",
+      "Levothyroxine",
+      "to",
+      "75",
+      "mcg",
+      "p.o.",
+      "q.a.m.",
+      "on",
+      "an",
+      "empty",
+      "stomach",
+      ".",
+      "Return",
+      "to",
+      "clinic",
+      "in",
+      "3",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Dr.",
+        "TSH",
+        "p.o.",
+        "q.a.m."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "q.a.m."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o."
+      ],
+      "decimal_values": [
+        "2.8",
+        "1.1"
+      ],
+      "decimal_measurements": [
+        "2.8",
+        "1.1"
+      ],
+      "dates": [],
+      "dosages": [
+        "75 mcg"
+      ],
+      "medication_dosages": [
+        "75 mcg"
+      ],
+      "units": [
+        "mIU/L",
+        "ng/dL",
+        "mcg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "not"
+      ],
+      "clinical_negations": [
+        "not"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_006",
+    "text": "Patient with severe COPD seen on 05/02/2024. Physical exam reveals bilateral expiratory wheezes without crackles. Resting oxygen saturation was 92.5% on room air. Started on Albuterol 2.5 mg nebulizer solution q.4h. p.r.n. for acute bronchospasm. Patient denies hemoptysis or purulent sputum.",
+    "expected_sentences": [
+      "Patient with severe COPD seen on 05/02/2024.",
+      "Physical exam reveals bilateral expiratory wheezes without crackles.",
+      "Resting oxygen saturation was 92.5% on room air.",
+      "Started on Albuterol 2.5 mg nebulizer solution q.4h. p.r.n. for acute bronchospasm.",
+      "Patient denies hemoptysis or purulent sputum."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      43,
+      112,
+      161,
+      245,
+      291
+    ],
+    "expected_tokens": [
+      "Patient",
+      "with",
+      "severe",
+      "COPD",
+      "seen",
+      "on",
+      "05/02/2024",
+      ".",
+      "Physical",
+      "exam",
+      "reveals",
+      "bilateral",
+      "expiratory",
+      "wheezes",
+      "without",
+      "crackles",
+      ".",
+      "Resting",
+      "oxygen",
+      "saturation",
+      "was",
+      "92.5%",
+      "on",
+      "room",
+      "air",
+      ".",
+      "Started",
+      "on",
+      "Albuterol",
+      "2.5",
+      "mg",
+      "nebulizer",
+      "solution",
+      "q",
+      ".",
+      "4",
+      ".",
+      "p.r.n.",
+      "for",
+      "acute",
+      "bronchospasm",
+      ".",
+      "Patient",
+      "denies",
+      "hemoptysis",
+      "or",
+      "purulent",
+      "sputum",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "COPD",
+        "p.r.n.",
+        "q.4h."
+      ],
+      "protected_abbreviations": [
+        "p.r.n.",
+        "q.4h."
+      ],
+      "medical_shorthand": [
+        "p.r.n."
+      ],
+      "decimal_values": [
+        "92.5%",
+        "2.5"
+      ],
+      "decimal_measurements": [
+        "92.5%",
+        "2.5"
+      ],
+      "dates": [
+        "05/02/2024"
+      ],
+      "dosages": [
+        "2.5 mg"
+      ],
+      "medication_dosages": [
+        "2.5 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_007",
+    "text": "Consultation with Dr. Chen for CKD stage 3b. Serum creatinine measured at 2.1 mg/dL with BUN 34 mg/dL and eGFR 38.5 mL/min. Blood pressure recorded at 134/82 mmHg in right arm. Patient denies gross hematuria or dysuria. Rx renewed for Losartan 50 mg Tab. p.o. q.d. without modification.",
+    "expected_sentences": [
+      "Consultation with Dr. Chen for CKD stage 3b.",
+      "Serum creatinine measured at 2.1 mg/dL with BUN 34 mg/dL and eGFR 38.5 mL/min.",
+      "Blood pressure recorded at 134/82 mmHg in right arm.",
+      "Patient denies gross hematuria or dysuria.",
+      "Rx renewed for Losartan 50 mg Tab. p.o. q.d. without modification."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      43,
+      122,
+      175,
+      218,
+      285
+    ],
+    "expected_tokens": [
+      "Consultation",
+      "with",
+      "Dr.",
+      "Chen",
+      "for",
+      "CKD",
+      "stage",
+      "3",
+      ".",
+      "Serum",
+      "creatinine",
+      "measured",
+      "at",
+      "2.1",
+      "mg/dL",
+      "with",
+      "BUN",
+      "34",
+      "mg/dL",
+      "and",
+      "eGFR",
+      "38.5",
+      "mL/min",
+      ".",
+      "Blood",
+      "pressure",
+      "recorded",
+      "at",
+      "134/82",
+      "mmHg",
+      "in",
+      "right",
+      "arm",
+      ".",
+      "Patient",
+      "denies",
+      "gross",
+      "hematuria",
+      "or",
+      "dysuria",
+      ".",
+      "Rx",
+      "renewed",
+      "for",
+      "Losartan",
+      "50",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.d.",
+      "without",
+      "modification",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Nephrology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "CKD",
+        "BUN",
+        "eGFR",
+        "mg/dL",
+        "mL/min",
+        "Rx",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "rx",
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "2.1",
+        "38.5"
+      ],
+      "decimal_measurements": [
+        "2.1",
+        "38.5"
+      ],
+      "dates": [],
+      "dosages": [
+        "50 mg"
+      ],
+      "medication_dosages": [
+        "50 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mL/min",
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "134/82 mmHg"
+      ],
+      "negations": [
+        "denies",
+        "without"
+      ],
+      "clinical_negations": [
+        "denies",
+        "without"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "rx",
+          "canonical": "prescription"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_008",
+    "text": "Pt presents with c/o persistent heartburn and epigastric discomfort. Upper endoscopy revealed grade B reflux esophagitis without Barrett changes. Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals. Patient reports no dysphagia, odynophagia, or black tarry stools. Follow-up scheduled in 8 weeks.",
+    "expected_sentences": [
+      "Pt presents with c/o persistent heartburn and epigastric discomfort.",
+      "Upper endoscopy revealed grade B reflux esophagitis without Barrett changes.",
+      "Prescribed Omeprazole 20 mg Cap. p.o. b.i.d. before meals.",
+      "Patient reports no dysphagia, odynophagia, or black tarry stools.",
+      "Follow-up scheduled in 8 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      67,
+      144,
+      203,
+      269,
+      301
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presents",
+      "with",
+      "c/o",
+      "persistent",
+      "heartburn",
+      "and",
+      "epigastric",
+      "discomfort",
+      ".",
+      "Upper",
+      "endoscopy",
+      "revealed",
+      "grade",
+      "B",
+      "reflux",
+      "esophagitis",
+      "without",
+      "Barrett",
+      "changes",
+      ".",
+      "Prescribed",
+      "Omeprazole",
+      "20",
+      "mg",
+      "Cap.",
+      "p.o.",
+      "b.i.d.",
+      "before",
+      "meals",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "dysphagia",
+      ",",
+      "odynophagia",
+      ",",
+      "or",
+      "black",
+      "tarry",
+      "stools",
+      ".",
+      "Follow-up",
+      "scheduled",
+      "in",
+      "8",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "c/o",
+        "Cap.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Cap.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "c/o",
+        "cap.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "20 mg"
+      ],
+      "medication_dosages": [
+        "20 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "cap.",
+          "canonical": "capsule"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_009",
+    "text": "Neurologic evaluation by Dr. Miller for episodic migraine. Pt reports 6 headache days per month with throbbing hemicranial pain. Pt denies visual aura, nausea, or photophobia. Prescribed Topiramate 25 mg p.o. b.i.d. for prophylaxis. Sumatriptan 50 mg p.o. p.r.n. provided for acute attacks.",
+    "expected_sentences": [
+      "Neurologic evaluation by Dr. Miller for episodic migraine.",
+      "Pt reports 6 headache days per month with throbbing hemicranial pain.",
+      "Pt denies visual aura, nausea, or photophobia.",
+      "Prescribed Topiramate 25 mg p.o. b.i.d. for prophylaxis.",
+      "Sumatriptan 50 mg p.o. p.r.n. provided for acute attacks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      57,
+      127,
+      174,
+      231,
+      289
+    ],
+    "expected_tokens": [
+      "Neurologic",
+      "evaluation",
+      "by",
+      "Dr.",
+      "Miller",
+      "for",
+      "episodic",
+      "migraine",
+      ".",
+      "Pt",
+      "reports",
+      "6",
+      "headache",
+      "days",
+      "per",
+      "month",
+      "with",
+      "throbbing",
+      "hemicranial",
+      "pain",
+      ".",
+      "Pt",
+      "denies",
+      "visual",
+      "aura",
+      ",",
+      "nausea",
+      ",",
+      "or",
+      "photophobia",
+      ".",
+      "Prescribed",
+      "Topiramate",
+      "25",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "for",
+      "prophylaxis",
+      ".",
+      "Sumatriptan",
+      "50",
+      "mg",
+      "p.o.",
+      "p.r.n.",
+      "provided",
+      "for",
+      "acute",
+      "attacks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Neurology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "Pt",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "25 mg",
+        "50 mg"
+      ],
+      "medication_dosages": [
+        "25 mg",
+        "50 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_010",
+    "text": "pt admitted with c/o lower extremity swelling vitals stable BP 142/88 mmHg HR 76 regular Dr. Adams evaluated started on Furosemide 20 mg p.o. b.i.d. pt denies orthopnea discharge planned pending renal panel",
+    "expected_sentences": [
+      "pt admitted with c/o lower extremity swelling vitals stable BP 142/88 mmHg HR 76 regular.",
+      "Dr. Adams evaluated started on Furosemide 20 mg p.o. b.i.d.",
+      "pt denies orthopnea.",
+      "discharge planned pending renal panel."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      88,
+      147,
+      168,
+      206
+    ],
+    "expected_tokens": [
+      "pt",
+      "admitted",
+      "with",
+      "c/o",
+      "lower",
+      "extremity",
+      "swelling",
+      "vitals",
+      "stable",
+      "BP",
+      "142/88",
+      "mmHg",
+      "HR",
+      "76",
+      "regular",
+      ".",
+      "Dr.",
+      "Adams",
+      "evaluated",
+      "started",
+      "on",
+      "Furosemide",
+      "20",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "pt",
+      "denies",
+      "orthopnea",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "renal",
+      "panel",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "pt",
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "c/o",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "20 mg"
+      ],
+      "medication_dosages": [
+        "20 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "142/88 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_011",
+    "text": "Patient has established hx of seropositive rheumatoid arthritis. Joint exam demonstrates mild MCP swelling without active synovitis. Prescribed Methotrexate 15 mg p.o. weekly alongside Folic acid 1 mg p.o. q.d. Dr. Watson ordered routine CBC and hepatic function panel. Patient denies mouth ulcers or alopecia.",
+    "expected_sentences": [
+      "Patient has established hx of seropositive rheumatoid arthritis.",
+      "Joint exam demonstrates mild MCP swelling without active synovitis.",
+      "Prescribed Methotrexate 15 mg p.o. weekly alongside Folic acid 1 mg p.o. q.d.",
+      "Dr. Watson ordered routine CBC and hepatic function panel.",
+      "Patient denies mouth ulcers or alopecia."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      63,
+      131,
+      209,
+      268,
+      309
+    ],
+    "expected_tokens": [
+      "Patient",
+      "has",
+      "established",
+      "hx",
+      "of",
+      "seropositive",
+      "rheumatoid",
+      "arthritis",
+      ".",
+      "Joint",
+      "exam",
+      "demonstrates",
+      "mild",
+      "MCP",
+      "swelling",
+      "without",
+      "active",
+      "synovitis",
+      ".",
+      "Prescribed",
+      "Methotrexate",
+      "15",
+      "mg",
+      "p.o.",
+      "weekly",
+      "alongside",
+      "Folic",
+      "acid",
+      "1",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "Dr.",
+      "Watson",
+      "ordered",
+      "routine",
+      "CBC",
+      "and",
+      "hepatic",
+      "function",
+      "panel",
+      ".",
+      "Patient",
+      "denies",
+      "mouth",
+      "ulcers",
+      "or",
+      "alopecia",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Rheumatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "hx",
+        "MCP",
+        "p.o.",
+        "q.d.",
+        "Dr.",
+        "CBC"
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "q.d.",
+        "Dr."
+      ],
+      "medical_shorthand": [
+        "hx",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "15 mg",
+        "1 mg"
+      ],
+      "medication_dosages": [
+        "15 mg",
+        "1 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "hx",
+          "canonical": "history"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_012",
+    "text": "Annual preventive exam conducted on 04/03/2024 by Dr. King. Vital signs: BP 122/78 mmHg, HR 68 bpm, weight 81.2 kg. Fasting blood glucose was 94.6 mg/dL with lipid panel within normal limits. Pt is not taking any prescription medications at this time. Recommended routine colonoscopy follow-up.",
+    "expected_sentences": [
+      "Annual preventive exam conducted on 04/03/2024 by Dr. King.",
+      "Vital signs: BP 122/78 mmHg, HR 68 bpm, weight 81.2 kg.",
+      "Fasting blood glucose was 94.6 mg/dL with lipid panel within normal limits.",
+      "Pt is not taking any prescription medications at this time.",
+      "Recommended routine colonoscopy follow-up."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      58,
+      114,
+      190,
+      250,
+      293
+    ],
+    "expected_tokens": [
+      "Annual",
+      "preventive",
+      "exam",
+      "conducted",
+      "on",
+      "04/03/2024",
+      "by",
+      "Dr.",
+      "King",
+      ".",
+      "Vital",
+      "signs",
+      ":",
+      "BP",
+      "122/78",
+      "mmHg",
+      ",",
+      "HR",
+      "68",
+      "bpm",
+      ",",
+      "weight",
+      "81.2",
+      "kg",
+      ".",
+      "Fasting",
+      "blood",
+      "glucose",
+      "was",
+      "94.6",
+      "mg/dL",
+      "with",
+      "lipid",
+      "panel",
+      "within",
+      "normal",
+      "limits",
+      ".",
+      "Pt",
+      "is",
+      "not",
+      "taking",
+      "any",
+      "prescription",
+      "medications",
+      "at",
+      "this",
+      "time",
+      ".",
+      "Recommended",
+      "routine",
+      "colonoscopy",
+      "follow-up",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Primary Care",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "BP",
+        "HR",
+        "bpm",
+        "mg/dL",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [
+        "pt"
+      ],
+      "decimal_values": [
+        "81.2",
+        "94.6"
+      ],
+      "decimal_measurements": [
+        "81.2",
+        "94.6"
+      ],
+      "dates": [
+        "04/03/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "mmHg",
+        "bpm",
+        "kg",
+        "mg/dL"
+      ],
+      "blood_pressure": [
+        "122/78 mmHg"
+      ],
+      "negations": [
+        "not"
+      ],
+      "clinical_negations": [
+        "not"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_013",
+    "text": "Pt admitted to ED with right lower extremity cellulitis. Initial labs revealed WBC 12.4 x10^3/uL and CRP 18.2 mg/L. Initiated Cefazolin 1 g i.v. q.8h. for bacterial infection. Patient denies fever, chills, or drainage from the site. Vitals stable with BP 126/80 mmHg.",
+    "expected_sentences": [
+      "Pt admitted to ED with right lower extremity cellulitis.",
+      "Initial labs revealed WBC 12.4 x10^3/uL and CRP 18.2 mg/L.",
+      "Initiated Cefazolin 1 g i.v. q.8h. for bacterial infection.",
+      "Patient denies fever, chills, or drainage from the site.",
+      "Vitals stable with BP 126/80 mmHg."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      55,
+      114,
+      174,
+      231,
+      266
+    ],
+    "expected_tokens": [
+      "Pt",
+      "admitted",
+      "to",
+      "ED",
+      "with",
+      "right",
+      "lower",
+      "extremity",
+      "cellulitis",
+      ".",
+      "Initial",
+      "labs",
+      "revealed",
+      "WBC",
+      "12.4",
+      "x10",
+      "^",
+      "3",
+      "/",
+      "uL",
+      "and",
+      "CRP",
+      "18.2",
+      "mg/L",
+      ".",
+      "Initiated",
+      "Cefazolin",
+      "1",
+      "g",
+      "i.v.",
+      "q",
+      ".",
+      "8",
+      ".",
+      "for",
+      "bacterial",
+      "infection",
+      ".",
+      "Patient",
+      "denies",
+      "fever",
+      ",",
+      "chills",
+      ",",
+      "or",
+      "drainage",
+      "from",
+      "the",
+      "site",
+      ".",
+      "Vitals",
+      "stable",
+      "with",
+      "BP",
+      "126/80",
+      "mmHg",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Infectious Disease",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "ED",
+        "WBC",
+        "CRP",
+        "i.v.",
+        "q.8h.",
+        "BP"
+      ],
+      "protected_abbreviations": [
+        "i.v.",
+        "q.8h."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "ed",
+        "i.v."
+      ],
+      "decimal_values": [
+        "12.4",
+        "18.2"
+      ],
+      "decimal_measurements": [
+        "12.4",
+        "18.2"
+      ],
+      "dates": [],
+      "dosages": [
+        "1 g"
+      ],
+      "medication_dosages": [
+        "1 g"
+      ],
+      "units": [
+        "g",
+        "mg/L",
+        "mmHg"
+      ],
+      "blood_pressure": [
+        "126/80 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "ed",
+          "canonical": "emergency_department"
+        },
+        {
+          "shorthand": "i.v.",
+          "canonical": "intravenous"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_014",
+    "text": "Patient with chronic systolic heart failure presents for medication titration. Weight recorded at 74.3 kg without acute fluid retention. Current blood pressure is 114/70 mmHg. Rx adjusted to Spironolactone 25 mg Tab. p.o. q.d. with Lisinopril 20 mg daily. Patient denies orthopnea or paroxysmal nocturnal dyspnea.",
+    "expected_sentences": [
+      "Patient with chronic systolic heart failure presents for medication titration.",
+      "Weight recorded at 74.3 kg without acute fluid retention.",
+      "Current blood pressure is 114/70 mmHg.",
+      "Rx adjusted to Spironolactone 25 mg Tab. p.o. q.d. with Lisinopril 20 mg daily.",
+      "Patient denies orthopnea or paroxysmal nocturnal dyspnea."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      77,
+      135,
+      174,
+      254,
+      312
+    ],
+    "expected_tokens": [
+      "Patient",
+      "with",
+      "chronic",
+      "systolic",
+      "heart",
+      "failure",
+      "presents",
+      "for",
+      "medication",
+      "titration",
+      ".",
+      "Weight",
+      "recorded",
+      "at",
+      "74.3",
+      "kg",
+      "without",
+      "acute",
+      "fluid",
+      "retention",
+      ".",
+      "Current",
+      "blood",
+      "pressure",
+      "is",
+      "114/70",
+      "mmHg",
+      ".",
+      "Rx",
+      "adjusted",
+      "to",
+      "Spironolactone",
+      "25",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.d.",
+      "with",
+      "Lisinopril",
+      "20",
+      "mg",
+      "daily",
+      ".",
+      "Patient",
+      "denies",
+      "orthopnea",
+      "or",
+      "paroxysmal",
+      "nocturnal",
+      "dyspnea",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Rx",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "rx",
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "74.3"
+      ],
+      "decimal_measurements": [
+        "74.3"
+      ],
+      "dates": [],
+      "dosages": [
+        "25 mg",
+        "20 mg"
+      ],
+      "medication_dosages": [
+        "25 mg",
+        "20 mg"
+      ],
+      "units": [
+        "kg",
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "114/70 mmHg"
+      ],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "rx",
+          "canonical": "prescription"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_015",
+    "text": "Visit on 18/01/2024 for Type 1 diabetes continuous glucose monitor review. Sensor average glucose is 142.5 mg/dL with HbA1c 7.1%. Basal insulin rate adjusted to 0.75 units per hour. Patient experienced no severe hypoglycemia or diabetic ketoacidosis. Follow-up appointment scheduled for 18/04/2024.",
+    "expected_sentences": [
+      "Visit on 18/01/2024 for Type 1 diabetes continuous glucose monitor review.",
+      "Sensor average glucose is 142.5 mg/dL with HbA1c 7.1%.",
+      "Basal insulin rate adjusted to 0.75 units per hour.",
+      "Patient experienced no severe hypoglycemia or diabetic ketoacidosis.",
+      "Follow-up appointment scheduled for 18/04/2024."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      73,
+      128,
+      180,
+      249,
+      297
+    ],
+    "expected_tokens": [
+      "Visit",
+      "on",
+      "18/01/2024",
+      "for",
+      "Type",
+      "1",
+      "diabetes",
+      "continuous",
+      "glucose",
+      "monitor",
+      "review",
+      ".",
+      "Sensor",
+      "average",
+      "glucose",
+      "is",
+      "142.5",
+      "mg/dL",
+      "with",
+      "HbA1c",
+      "7.1%",
+      ".",
+      "Basal",
+      "insulin",
+      "rate",
+      "adjusted",
+      "to",
+      "0.75",
+      "units",
+      "per",
+      "hour",
+      ".",
+      "Patient",
+      "experienced",
+      "no",
+      "severe",
+      "hypoglycemia",
+      "or",
+      "diabetic",
+      "ketoacidosis",
+      ".",
+      "Follow-up",
+      "appointment",
+      "scheduled",
+      "for",
+      "18/04/2024",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "mg/dL",
+        "HbA1c"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [],
+      "decimal_values": [
+        "142.5",
+        "7.1%",
+        "0.75"
+      ],
+      "decimal_measurements": [
+        "142.5",
+        "7.1%",
+        "0.75"
+      ],
+      "dates": [
+        "18/01/2024",
+        "18/04/2024"
+      ],
+      "dosages": [
+        "0.75 units"
+      ],
+      "medication_dosages": [
+        "0.75 units"
+      ],
+      "units": [
+        "mg/dL",
+        "units"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "no"
+      ],
+      "clinical_negations": [
+        "no"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_016",
+    "text": "Pt evaluated for major depressive disorder by Dr. Taylor. Pt reports improved mood and energy on Sertraline 50 mg p.o. q.d. without side effects. Patient explicitly denies suicidal ideation, homicidal ideation, or hallucinations. Sleep hygiene is maintained with no middle insomnia. Continued current tx plan.",
+    "expected_sentences": [
+      "Pt evaluated for major depressive disorder by Dr. Taylor.",
+      "Pt reports improved mood and energy on Sertraline 50 mg p.o. q.d. without side effects.",
+      "Patient explicitly denies suicidal ideation, homicidal ideation, or hallucinations.",
+      "Sleep hygiene is maintained with no middle insomnia.",
+      "Continued current tx plan."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      56,
+      144,
+      228,
+      281,
+      308
+    ],
+    "expected_tokens": [
+      "Pt",
+      "evaluated",
+      "for",
+      "major",
+      "depressive",
+      "disorder",
+      "by",
+      "Dr.",
+      "Taylor",
+      ".",
+      "Pt",
+      "reports",
+      "improved",
+      "mood",
+      "and",
+      "energy",
+      "on",
+      "Sertraline",
+      "50",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "without",
+      "side",
+      "effects",
+      ".",
+      "Patient",
+      "explicitly",
+      "denies",
+      "suicidal",
+      "ideation",
+      ",",
+      "homicidal",
+      "ideation",
+      ",",
+      "or",
+      "hallucinations",
+      ".",
+      "Sleep",
+      "hygiene",
+      "is",
+      "maintained",
+      "with",
+      "no",
+      "middle",
+      "insomnia",
+      ".",
+      "Continued",
+      "current",
+      "tx",
+      "plan",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Psychiatry",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Dr.",
+        "p.o.",
+        "q.d.",
+        "tx"
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "q.d.",
+        "tx"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "50 mg"
+      ],
+      "medication_dosages": [
+        "50 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        },
+        {
+          "shorthand": "tx",
+          "canonical": "treatment"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_017",
+    "text": "Clinical checkup s/p right knee arthroscopy performed on 12/01/2024. Surgical port sites healed without signs of localized infection. Prescribed Tab. Meloxicam 15 mg p.o. q.d. p.r.n. for pain. Patient denies joint instability, locking, or giving way. Physical therapy regimen initiated twice weekly.",
+    "expected_sentences": [
+      "Clinical checkup s/p right knee arthroscopy performed on 12/01/2024.",
+      "Surgical port sites healed without signs of localized infection.",
+      "Prescribed Tab. Meloxicam 15 mg p.o. q.d. p.r.n. for pain.",
+      "Patient denies joint instability, locking, or giving way.",
+      "Physical therapy regimen initiated twice weekly."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      67,
+      132,
+      191,
+      249,
+      298
+    ],
+    "expected_tokens": [
+      "Clinical",
+      "checkup",
+      "s/p",
+      "right",
+      "knee",
+      "arthroscopy",
+      "performed",
+      "on",
+      "12/01/2024",
+      ".",
+      "Surgical",
+      "port",
+      "sites",
+      "healed",
+      "without",
+      "signs",
+      "of",
+      "localized",
+      "infection",
+      ".",
+      "Prescribed",
+      "Tab.",
+      "Meloxicam",
+      "15",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "p.r.n.",
+      "for",
+      "pain",
+      ".",
+      "Patient",
+      "denies",
+      "joint",
+      "instability",
+      ",",
+      "locking",
+      ",",
+      "or",
+      "giving",
+      "way",
+      ".",
+      "Physical",
+      "therapy",
+      "regimen",
+      "initiated",
+      "twice",
+      "weekly",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Orthopedics",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "s/p",
+        "Tab.",
+        "p.o.",
+        "q.d.",
+        "p.r.n."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "q.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "s/p",
+        "tab.",
+        "p.o.",
+        "q.d.",
+        "p.r.n."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "12/01/2024"
+      ],
+      "dosages": [
+        "15 mg"
+      ],
+      "medication_dosages": [
+        "15 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "s/p",
+          "canonical": "status_post"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_018",
+    "text": "Pt seen by Dr. White for persistent post-viral bronchitis. Chest radiograph demonstrates clear lung fields without consolidation. Prescribed Azithromycin 250 mg Tab. p.o. q.d. for 5 days. Patient denies hemoptysis, chest pain, or wheezing. Follow-up in clinic if symptoms worsen.",
+    "expected_sentences": [
+      "Pt seen by Dr. White for persistent post-viral bronchitis.",
+      "Chest radiograph demonstrates clear lung fields without consolidation.",
+      "Prescribed Azithromycin 250 mg Tab. p.o. q.d. for 5 days.",
+      "Patient denies hemoptysis, chest pain, or wheezing.",
+      "Follow-up in clinic if symptoms worsen."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      57,
+      128,
+      186,
+      238,
+      278
+    ],
+    "expected_tokens": [
+      "Pt",
+      "seen",
+      "by",
+      "Dr.",
+      "White",
+      "for",
+      "persistent",
+      "post-viral",
+      "bronchitis",
+      ".",
+      "Chest",
+      "radiograph",
+      "demonstrates",
+      "clear",
+      "lung",
+      "fields",
+      "without",
+      "consolidation",
+      ".",
+      "Prescribed",
+      "Azithromycin",
+      "250",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.d.",
+      "for",
+      "5",
+      "days",
+      ".",
+      "Patient",
+      "denies",
+      "hemoptysis",
+      ",",
+      "chest",
+      "pain",
+      ",",
+      "or",
+      "wheezing",
+      ".",
+      "Follow-up",
+      "in",
+      "clinic",
+      "if",
+      "symptoms",
+      "worsen",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "250 mg"
+      ],
+      "medication_dosages": [
+        "250 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_019",
+    "text": "Patient with established dx of ulcerative colitis evaluated today. Colonoscopy revealed mild mucosal erythema without deep ulcerations. Maintenance therapy continued with Mesalamine 1.2 g p.o. t.i.d. daily. Pt denies rectal bleeding, nocturnal diarrhea, or weight loss. Laboratory markers show normal CRP.",
+    "expected_sentences": [
+      "Patient with established dx of ulcerative colitis evaluated today.",
+      "Colonoscopy revealed mild mucosal erythema without deep ulcerations.",
+      "Maintenance therapy continued with Mesalamine 1.2 g p.o. t.i.d. daily.",
+      "Pt denies rectal bleeding, nocturnal diarrhea, or weight loss.",
+      "Laboratory markers show normal CRP."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      65,
+      134,
+      205,
+      268,
+      304
+    ],
+    "expected_tokens": [
+      "Patient",
+      "with",
+      "established",
+      "dx",
+      "of",
+      "ulcerative",
+      "colitis",
+      "evaluated",
+      "today",
+      ".",
+      "Colonoscopy",
+      "revealed",
+      "mild",
+      "mucosal",
+      "erythema",
+      "without",
+      "deep",
+      "ulcerations",
+      ".",
+      "Maintenance",
+      "therapy",
+      "continued",
+      "with",
+      "Mesalamine",
+      "1.2",
+      "g",
+      "p.o.",
+      "t.i.d.",
+      "daily",
+      ".",
+      "Pt",
+      "denies",
+      "rectal",
+      "bleeding",
+      ",",
+      "nocturnal",
+      "diarrhea",
+      ",",
+      "or",
+      "weight",
+      "loss",
+      ".",
+      "Laboratory",
+      "markers",
+      "show",
+      "normal",
+      "CRP",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "dx",
+        "p.o.",
+        "t.i.d.",
+        "Pt",
+        "CRP"
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "t.i.d."
+      ],
+      "medical_shorthand": [
+        "dx",
+        "p.o.",
+        "t.i.d.",
+        "pt"
+      ],
+      "decimal_values": [
+        "1.2"
+      ],
+      "decimal_measurements": [
+        "1.2"
+      ],
+      "dates": [],
+      "dosages": [
+        "1.2 g"
+      ],
+      "medication_dosages": [
+        "1.2 g"
+      ],
+      "units": [
+        "g"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "dx",
+          "canonical": "diagnosis"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        },
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_020",
+    "text": "patient admitted with c/o acute left flank pain vitals stable BP 136/84 mmHg HR 90 regular Dr. Baker consulted started on Ketorolac 15 mg i.v. q.6h. patient denies gross hematuria discharge planned pending ultrasound review",
+    "expected_sentences": [
+      "patient admitted with c/o acute left flank pain vitals stable BP 136/84 mmHg HR 90 regular.",
+      "Dr. Baker consulted started on Ketorolac 15 mg i.v. q.6h.",
+      "patient denies gross hematuria.",
+      "discharge planned pending ultrasound review."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      90,
+      147,
+      179,
+      223
+    ],
+    "expected_tokens": [
+      "patient",
+      "admitted",
+      "with",
+      "c/o",
+      "acute",
+      "left",
+      "flank",
+      "pain",
+      "vitals",
+      "stable",
+      "BP",
+      "136/84",
+      "mmHg",
+      "HR",
+      "90",
+      "regular",
+      ".",
+      "Dr.",
+      "Baker",
+      "consulted",
+      "started",
+      "on",
+      "Ketorolac",
+      "15",
+      "mg",
+      "i.v.",
+      "q",
+      ".",
+      "6",
+      ".",
+      "patient",
+      "denies",
+      "gross",
+      "hematuria",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "ultrasound",
+      "review",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Emergency / Urology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "i.v.",
+        "q.6h."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "i.v.",
+        "q.6h."
+      ],
+      "medical_shorthand": [
+        "c/o",
+        "i.v."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "15 mg"
+      ],
+      "medication_dosages": [
+        "15 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "136/84 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "i.v.",
+          "canonical": "intravenous"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_021",
+    "text": "Dr. Davis evaluated pt for painful diabetic peripheral neuropathy. Examination shows stocking-distribution hypoesthesia with intact motor reflexes. Started Gabapentin 300 mg Cap. p.o. t.i.d. with meals. Patient denies ataxia, severe dizziness, or daytime sedation. Follow-up titration visit in 4 weeks.",
+    "expected_sentences": [
+      "Dr. Davis evaluated pt for painful diabetic peripheral neuropathy.",
+      "Examination shows stocking-distribution hypoesthesia with intact motor reflexes.",
+      "Started Gabapentin 300 mg Cap. p.o. t.i.d. with meals.",
+      "Patient denies ataxia, severe dizziness, or daytime sedation.",
+      "Follow-up titration visit in 4 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      65,
+      146,
+      201,
+      263,
+      301
+    ],
+    "expected_tokens": [
+      "Dr.",
+      "Davis",
+      "evaluated",
+      "pt",
+      "for",
+      "painful",
+      "diabetic",
+      "peripheral",
+      "neuropathy",
+      ".",
+      "Examination",
+      "shows",
+      "stocking-distribution",
+      "hypoesthesia",
+      "with",
+      "intact",
+      "motor",
+      "reflexes",
+      ".",
+      "Started",
+      "Gabapentin",
+      "300",
+      "mg",
+      "Cap.",
+      "p.o.",
+      "t.i.d.",
+      "with",
+      "meals",
+      ".",
+      "Patient",
+      "denies",
+      "ataxia",
+      ",",
+      "severe",
+      "dizziness",
+      ",",
+      "or",
+      "daytime",
+      "sedation",
+      ".",
+      "Follow-up",
+      "titration",
+      "visit",
+      "in",
+      "4",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Neurology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "pt",
+        "Cap.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Cap.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "cap.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "300 mg"
+      ],
+      "medication_dosages": [
+        "300 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "cap.",
+          "canonical": "capsule"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_022",
+    "text": "Evaluation on 11/11/2023 for microcytic hypochromic anemia. Hemoglobin level was 10.4 g/dL and serum ferritin measured 8.5 ng/mL. Prescribed Ferrous sulfate 325 mg Tab. p.o. q.d. with orange juice. Patient denies melena, hematochezia, or abnormal bruising. Repeat CBC ordered in 6 weeks.",
+    "expected_sentences": [
+      "Evaluation on 11/11/2023 for microcytic hypochromic anemia.",
+      "Hemoglobin level was 10.4 g/dL and serum ferritin measured 8.5 ng/mL.",
+      "Prescribed Ferrous sulfate 325 mg Tab. p.o. q.d. with orange juice.",
+      "Patient denies melena, hematochezia, or abnormal bruising.",
+      "Repeat CBC ordered in 6 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      58,
+      128,
+      196,
+      255,
+      286
+    ],
+    "expected_tokens": [
+      "Evaluation",
+      "on",
+      "11/11/2023",
+      "for",
+      "microcytic",
+      "hypochromic",
+      "anemia",
+      ".",
+      "Hemoglobin",
+      "level",
+      "was",
+      "10.4",
+      "g/dL",
+      "and",
+      "serum",
+      "ferritin",
+      "measured",
+      "8.5",
+      "ng/mL",
+      ".",
+      "Prescribed",
+      "Ferrous",
+      "sulfate",
+      "325",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.d.",
+      "with",
+      "orange",
+      "juice",
+      ".",
+      "Patient",
+      "denies",
+      "melena",
+      ",",
+      "hematochezia",
+      ",",
+      "or",
+      "abnormal",
+      "bruising",
+      ".",
+      "Repeat",
+      "CBC",
+      "ordered",
+      "in",
+      "6",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Hematology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Tab.",
+        "p.o.",
+        "q.d.",
+        "CBC"
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "10.4",
+        "8.5"
+      ],
+      "decimal_measurements": [
+        "10.4",
+        "8.5"
+      ],
+      "dates": [
+        "11/11/2023"
+      ],
+      "dosages": [
+        "325 mg"
+      ],
+      "medication_dosages": [
+        "325 mg"
+      ],
+      "units": [
+        "g/dL",
+        "ng/mL",
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_023",
+    "text": "Pt presented to ED s/p mechanical fall at home on 12/02/2024. Vitals: BP 140/86 mmHg, HR 72 bpm, oxygen saturation 98%. Non-contrast head CT was negative for acute intracranial hemorrhage. Patient denies loss of consciousness or neck pain. Discharged home in stable condition with family.",
+    "expected_sentences": [
+      "Pt presented to ED s/p mechanical fall at home on 12/02/2024.",
+      "Vitals: BP 140/86 mmHg, HR 72 bpm, oxygen saturation 98%.",
+      "Non-contrast head CT was negative for acute intracranial hemorrhage.",
+      "Patient denies loss of consciousness or neck pain.",
+      "Discharged home in stable condition with family."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      60,
+      118,
+      187,
+      238,
+      287
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presented",
+      "to",
+      "ED",
+      "s/p",
+      "mechanical",
+      "fall",
+      "at",
+      "home",
+      "on",
+      "12/02/2024",
+      ".",
+      "Vitals",
+      ":",
+      "BP",
+      "140/86",
+      "mmHg",
+      ",",
+      "HR",
+      "72",
+      "bpm",
+      ",",
+      "oxygen",
+      "saturation",
+      "98%",
+      ".",
+      "Non-contrast",
+      "head",
+      "CT",
+      "was",
+      "negative",
+      "for",
+      "acute",
+      "intracranial",
+      "hemorrhage",
+      ".",
+      "Patient",
+      "denies",
+      "loss",
+      "of",
+      "consciousness",
+      "or",
+      "neck",
+      "pain",
+      ".",
+      "Discharged",
+      "home",
+      "in",
+      "stable",
+      "condition",
+      "with",
+      "family",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Emergency Medicine",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "ED",
+        "s/p",
+        "BP",
+        "HR",
+        "bpm",
+        "CT"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [
+        "pt",
+        "ed",
+        "s/p"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "12/02/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "mmHg",
+        "bpm"
+      ],
+      "blood_pressure": [
+        "140/86 mmHg"
+      ],
+      "negations": [
+        "negative",
+        "denies"
+      ],
+      "clinical_negations": [
+        "negative",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "ed",
+          "canonical": "emergency_department"
+        },
+        {
+          "shorthand": "s/p",
+          "canonical": "status_post"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_024",
+    "text": "Patient seen by Dr. Roberts for atrial fibrillation rate control. Resting ECG shows rate-controlled rhythm at 68 bpm. Current BP 122/76 mmHg. Continued Metoprolol succinate 50 mg p.o. q.d. and Apixaban 5 mg p.o. b.i.d. Patient denies palpitations, syncope, or presyncope.",
+    "expected_sentences": [
+      "Patient seen by Dr. Roberts for atrial fibrillation rate control.",
+      "Resting ECG shows rate-controlled rhythm at 68 bpm.",
+      "Current BP 122/76 mmHg.",
+      "Continued Metoprolol succinate 50 mg p.o. q.d. and Apixaban 5 mg p.o. b.i.d.",
+      "Patient denies palpitations, syncope, or presyncope."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      64,
+      116,
+      140,
+      217,
+      270
+    ],
+    "expected_tokens": [
+      "Patient",
+      "seen",
+      "by",
+      "Dr.",
+      "Roberts",
+      "for",
+      "atrial",
+      "fibrillation",
+      "rate",
+      "control",
+      ".",
+      "Resting",
+      "ECG",
+      "shows",
+      "rate-controlled",
+      "rhythm",
+      "at",
+      "68",
+      "bpm",
+      ".",
+      "Current",
+      "BP",
+      "122/76",
+      "mmHg",
+      ".",
+      "Continued",
+      "Metoprolol",
+      "succinate",
+      "50",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "and",
+      "Apixaban",
+      "5",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "Patient",
+      "denies",
+      "palpitations",
+      ",",
+      "syncope",
+      ",",
+      "or",
+      "presyncope",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "ECG",
+        "bpm",
+        "BP",
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "p.o.",
+        "q.d.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "50 mg",
+        "5 mg"
+      ],
+      "medication_dosages": [
+        "50 mg",
+        "5 mg"
+      ],
+      "units": [
+        "bpm",
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "122/76 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_025",
+    "text": "Pt presents with chronic plaque psoriasis over bilateral elbows and knees. Lesions demonstrate erythematous plaques with thick silvery scale. Prescribed Clobetasol propionate 0.05% topical ointment b.i.d. for 2 weeks. Pt denies pruritus, bleeding, or signs of secondary infection. Follow-up scheduled in 1 month.",
+    "expected_sentences": [
+      "Pt presents with chronic plaque psoriasis over bilateral elbows and knees.",
+      "Lesions demonstrate erythematous plaques with thick silvery scale.",
+      "Prescribed Clobetasol propionate 0.05% topical ointment b.i.d. for 2 weeks.",
+      "Pt denies pruritus, bleeding, or signs of secondary infection.",
+      "Follow-up scheduled in 1 month."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      73,
+      140,
+      216,
+      279,
+      311
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presents",
+      "with",
+      "chronic",
+      "plaque",
+      "psoriasis",
+      "over",
+      "bilateral",
+      "elbows",
+      "and",
+      "knees",
+      ".",
+      "Lesions",
+      "demonstrate",
+      "erythematous",
+      "plaques",
+      "with",
+      "thick",
+      "silvery",
+      "scale",
+      ".",
+      "Prescribed",
+      "Clobetasol",
+      "propionate",
+      "0.05%",
+      "topical",
+      "ointment",
+      "b.i.d.",
+      "for",
+      "2",
+      "weeks",
+      ".",
+      "Pt",
+      "denies",
+      "pruritus",
+      ",",
+      "bleeding",
+      ",",
+      "or",
+      "signs",
+      "of",
+      "secondary",
+      "infection",
+      ".",
+      "Follow-up",
+      "scheduled",
+      "in",
+      "1",
+      "month",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Dermatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "b.i.d."
+      ],
+      "decimal_values": [
+        "0.05%"
+      ],
+      "decimal_measurements": [
+        "0.05%"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_026",
+    "text": "Follow-up visit with Dr. Scott for moderate persistent asthma. Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted. Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n. Patient is not waking up at night with coughing or wheezing. Inhaler technique demonstrated satisfactorily.",
+    "expected_sentences": [
+      "Follow-up visit with Dr. Scott for moderate persistent asthma.",
+      "Spirometry shows FEV1 at 2.45 L representing 78.0% of predicted.",
+      "Prescribed Fluticasone/Salmeterol 250/50 mcg inhaled b.i.d. along with Albuterol p.r.n.",
+      "Patient is not waking up at night with coughing or wheezing.",
+      "Inhaler technique demonstrated satisfactorily."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      61,
+      126,
+      214,
+      275,
+      322
+    ],
+    "expected_tokens": [
+      "Follow-up",
+      "visit",
+      "with",
+      "Dr.",
+      "Scott",
+      "for",
+      "moderate",
+      "persistent",
+      "asthma",
+      ".",
+      "Spirometry",
+      "shows",
+      "FEV1",
+      "at",
+      "2.45",
+      "L",
+      "representing",
+      "78.0%",
+      "of",
+      "predicted",
+      ".",
+      "Prescribed",
+      "Fluticasone/Salmeterol",
+      "250/50",
+      "mcg",
+      "inhaled",
+      "b.i.d.",
+      "along",
+      "with",
+      "Albuterol",
+      "p.r.n.",
+      "Patient",
+      "is",
+      "not",
+      "waking",
+      "up",
+      "at",
+      "night",
+      "with",
+      "coughing",
+      "or",
+      "wheezing",
+      ".",
+      "Inhaler",
+      "technique",
+      "demonstrated",
+      "satisfactorily",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "FEV1",
+        "mcg",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "decimal_values": [
+        "2.45",
+        "78.0%"
+      ],
+      "decimal_measurements": [
+        "2.45",
+        "78.0%"
+      ],
+      "dates": [],
+      "dosages": [
+        "250/50 mcg"
+      ],
+      "medication_dosages": [
+        "250/50 mcg"
+      ],
+      "units": [
+        "L",
+        "mcg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "not"
+      ],
+      "clinical_negations": [
+        "not"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_027",
+    "text": "Clinic visit on 08/11/2023 for diabetic microvascular complications screening. Urine albumin-to-creatinine ratio elevated at 48.2 mg/g. Office BP was 128/80 mmHg with pulse 70 bpm. Continued Losartan 50 mg p.o. q.d. for renal protection. Patient denies lower extremity edema or hematuria.",
+    "expected_sentences": [
+      "Clinic visit on 08/11/2023 for diabetic microvascular complications screening.",
+      "Urine albumin-to-creatinine ratio elevated at 48.2 mg/g.",
+      "Office BP was 128/80 mmHg with pulse 70 bpm.",
+      "Continued Losartan 50 mg p.o. q.d. for renal protection.",
+      "Patient denies lower extremity edema or hematuria."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      77,
+      134,
+      179,
+      236,
+      287
+    ],
+    "expected_tokens": [
+      "Clinic",
+      "visit",
+      "on",
+      "08/11/2023",
+      "for",
+      "diabetic",
+      "microvascular",
+      "complications",
+      "screening",
+      ".",
+      "Urine",
+      "albumin-to-creatinine",
+      "ratio",
+      "elevated",
+      "at",
+      "48.2",
+      "mg/g",
+      ".",
+      "Office",
+      "BP",
+      "was",
+      "128/80",
+      "mmHg",
+      "with",
+      "pulse",
+      "70",
+      "bpm",
+      ".",
+      "Continued",
+      "Losartan",
+      "50",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "for",
+      "renal",
+      "protection",
+      ".",
+      "Patient",
+      "denies",
+      "lower",
+      "extremity",
+      "edema",
+      "or",
+      "hematuria",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "BP",
+        "bpm",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "48.2"
+      ],
+      "decimal_measurements": [
+        "48.2"
+      ],
+      "dates": [
+        "08/11/2023"
+      ],
+      "dosages": [
+        "50 mg"
+      ],
+      "medication_dosages": [
+        "50 mg"
+      ],
+      "units": [
+        "mg/g",
+        "mmHg",
+        "bpm",
+        "mg"
+      ],
+      "blood_pressure": [
+        "128/80 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_028",
+    "text": "Pt evaluated by Dr. Collins for essential hypertension management. Current BP 124/76 mmHg meets target goal. Prescribed Tab. Amlodipine 5 mg p.o. q.d. with good tolerance. Patient denies dizziness, headache, or ankle edema. Recheck blood pressure in 6 months.",
+    "expected_sentences": [
+      "Pt evaluated by Dr. Collins for essential hypertension management.",
+      "Current BP 124/76 mmHg meets target goal.",
+      "Prescribed Tab. Amlodipine 5 mg p.o. q.d. with good tolerance.",
+      "Patient denies dizziness, headache, or ankle edema.",
+      "Recheck blood pressure in 6 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      65,
+      107,
+      170,
+      222,
+      258
+    ],
+    "expected_tokens": [
+      "Pt",
+      "evaluated",
+      "by",
+      "Dr.",
+      "Collins",
+      "for",
+      "essential",
+      "hypertension",
+      "management",
+      ".",
+      "Current",
+      "BP",
+      "124/76",
+      "mmHg",
+      "meets",
+      "target",
+      "goal",
+      ".",
+      "Prescribed",
+      "Tab.",
+      "Amlodipine",
+      "5",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "with",
+      "good",
+      "tolerance",
+      ".",
+      "Patient",
+      "denies",
+      "dizziness",
+      ",",
+      "headache",
+      ",",
+      "or",
+      "ankle",
+      "edema",
+      ".",
+      "Recheck",
+      "blood",
+      "pressure",
+      "in",
+      "6",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Primary Care",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Dr.",
+        "BP",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "5 mg"
+      ],
+      "medication_dosages": [
+        "5 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "124/76 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_029",
+    "text": "Post-operative day 7 evaluation s/p laparoscopic cholecystectomy on 21/04/2024. Port site incisions are clean and dry without erythema or purulence. Patient reports no abdominal pain, nausea, or vomiting. Tolerating a regular diet without gastrointestinal distress. Cleared for light physical activities.",
+    "expected_sentences": [
+      "Post-operative day 7 evaluation s/p laparoscopic cholecystectomy on 21/04/2024.",
+      "Port site incisions are clean and dry without erythema or purulence.",
+      "Patient reports no abdominal pain, nausea, or vomiting.",
+      "Tolerating a regular diet without gastrointestinal distress.",
+      "Cleared for light physical activities."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      78,
+      147,
+      203,
+      264,
+      303
+    ],
+    "expected_tokens": [
+      "Post-operative",
+      "day",
+      "7",
+      "evaluation",
+      "s/p",
+      "laparoscopic",
+      "cholecystectomy",
+      "on",
+      "21/04/2024",
+      ".",
+      "Port",
+      "site",
+      "incisions",
+      "are",
+      "clean",
+      "and",
+      "dry",
+      "without",
+      "erythema",
+      "or",
+      "purulence",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "abdominal",
+      "pain",
+      ",",
+      "nausea",
+      ",",
+      "or",
+      "vomiting",
+      ".",
+      "Tolerating",
+      "a",
+      "regular",
+      "diet",
+      "without",
+      "gastrointestinal",
+      "distress",
+      ".",
+      "Cleared",
+      "for",
+      "light",
+      "physical",
+      "activities",
+      "."
+    ],
+    "annotations": {
+      "specialty": "General Surgery",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "s/p"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [
+        "s/p"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "21/04/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "s/p",
+          "canonical": "status_post"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_030",
+    "text": "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d. pt denies syncope discharge planned pending telemetry monitor",
+    "expected_sentences": [
+      "pt admitted with c/o recurrent palpitations vitals stable BP 128/78 mmHg HR 112 irregular.",
+      "Dr. Clark consulted started on Diltiazem 30 mg p.o. t.i.d.",
+      "pt denies syncope.",
+      "discharge planned pending telemetry monitor."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      89,
+      147,
+      166,
+      210
+    ],
+    "expected_tokens": [
+      "pt",
+      "admitted",
+      "with",
+      "c/o",
+      "recurrent",
+      "palpitations",
+      "vitals",
+      "stable",
+      "BP",
+      "128/78",
+      "mmHg",
+      "HR",
+      "112",
+      "irregular",
+      ".",
+      "Dr.",
+      "Clark",
+      "consulted",
+      "started",
+      "on",
+      "Diltiazem",
+      "30",
+      "mg",
+      "p.o.",
+      "t.i.d.",
+      "pt",
+      "denies",
+      "syncope",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "telemetry",
+      "monitor",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "pt",
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "c/o",
+        "p.o.",
+        "t.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "30 mg"
+      ],
+      "medication_dosages": [
+        "30 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "128/78 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_031",
+    "text": "Hemodialysis vascular access examination by Dr. Foster. Left arteriovenous fistula reveals strong thrill and audible bruit. Pre-dialysis weight was 82.4 kg with BP 148/92 mmHg. Patient denies arm pain, localized swelling, or erythema. Cleared for regular hemodialysis schedule.",
+    "expected_sentences": [
+      "Hemodialysis vascular access examination by Dr. Foster.",
+      "Left arteriovenous fistula reveals strong thrill and audible bruit.",
+      "Pre-dialysis weight was 82.4 kg with BP 148/92 mmHg.",
+      "Patient denies arm pain, localized swelling, or erythema.",
+      "Cleared for regular hemodialysis schedule."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      54,
+      122,
+      175,
+      233,
+      276
+    ],
+    "expected_tokens": [
+      "Hemodialysis",
+      "vascular",
+      "access",
+      "examination",
+      "by",
+      "Dr.",
+      "Foster",
+      ".",
+      "Left",
+      "arteriovenous",
+      "fistula",
+      "reveals",
+      "strong",
+      "thrill",
+      "and",
+      "audible",
+      "bruit",
+      ".",
+      "Pre-dialysis",
+      "weight",
+      "was",
+      "82.4",
+      "kg",
+      "with",
+      "BP",
+      "148/92",
+      "mmHg",
+      ".",
+      "Patient",
+      "denies",
+      "arm",
+      "pain",
+      ",",
+      "localized",
+      "swelling",
+      ",",
+      "or",
+      "erythema",
+      ".",
+      "Cleared",
+      "for",
+      "regular",
+      "hemodialysis",
+      "schedule",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Nephrology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "BP"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [
+        "82.4"
+      ],
+      "decimal_measurements": [
+        "82.4"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "kg",
+        "mmHg"
+      ],
+      "blood_pressure": [
+        "148/92 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_032",
+    "text": "Follow-up visit for adjuvant chemotherapy cycle 4. Complete blood count shows absolute neutrophil count 1.8 x10^3/uL and platelets 185 x10^3/uL. Pt denies fever, rigors, or severe oral mucositis. Prescribed Ondansetron 8 mg Tab. p.o. b.i.d. p.r.n. for nausea. Next infusion cycle scheduled next week.",
+    "expected_sentences": [
+      "Follow-up visit for adjuvant chemotherapy cycle 4.",
+      "Complete blood count shows absolute neutrophil count 1.8 x10^3/uL and platelets 185 x10^3/uL.",
+      "Pt denies fever, rigors, or severe oral mucositis.",
+      "Prescribed Ondansetron 8 mg Tab. p.o. b.i.d. p.r.n. for nausea.",
+      "Next infusion cycle scheduled next week."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      49,
+      143,
+      194,
+      258,
+      299
+    ],
+    "expected_tokens": [
+      "Follow-up",
+      "visit",
+      "for",
+      "adjuvant",
+      "chemotherapy",
+      "cycle",
+      "4",
+      ".",
+      "Complete",
+      "blood",
+      "count",
+      "shows",
+      "absolute",
+      "neutrophil",
+      "count",
+      "1.8",
+      "x10",
+      "^",
+      "3",
+      "/",
+      "uL",
+      "and",
+      "platelets",
+      "185",
+      "x10",
+      "^",
+      "3",
+      "/",
+      "uL",
+      ".",
+      "Pt",
+      "denies",
+      "fever",
+      ",",
+      "rigors",
+      ",",
+      "or",
+      "severe",
+      "oral",
+      "mucositis",
+      ".",
+      "Prescribed",
+      "Ondansetron",
+      "8",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "b.i.d.",
+      "p.r.n.",
+      "for",
+      "nausea",
+      ".",
+      "Next",
+      "infusion",
+      "cycle",
+      "scheduled",
+      "next",
+      "week",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Oncology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Tab.",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "tab.",
+        "p.o.",
+        "b.i.d.",
+        "p.r.n."
+      ],
+      "decimal_values": [
+        "1.8"
+      ],
+      "decimal_measurements": [
+        "1.8"
+      ],
+      "dates": [],
+      "dosages": [
+        "8 mg"
+      ],
+      "medication_dosages": [
+        "8 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_033",
+    "text": "Patient presents with chronic idiopathic constipation. Abdominal exam is soft, non-distended, without guarding. Prescribed Polyethylene glycol 17 g p.o. q.d. dissolved in 8 oz water. Patient reports no rectal bleeding, tenesmus, or unintentional weight loss. Encouraged increased dietary fiber and daily hydration.",
+    "expected_sentences": [
+      "Patient presents with chronic idiopathic constipation.",
+      "Abdominal exam is soft, non-distended, without guarding.",
+      "Prescribed Polyethylene glycol 17 g p.o. q.d. dissolved in 8 oz water.",
+      "Patient reports no rectal bleeding, tenesmus, or unintentional weight loss.",
+      "Encouraged increased dietary fiber and daily hydration."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      53,
+      110,
+      181,
+      257,
+      313
+    ],
+    "expected_tokens": [
+      "Patient",
+      "presents",
+      "with",
+      "chronic",
+      "idiopathic",
+      "constipation",
+      ".",
+      "Abdominal",
+      "exam",
+      "is",
+      "soft",
+      ",",
+      "non-distended",
+      ",",
+      "without",
+      "guarding",
+      ".",
+      "Prescribed",
+      "Polyethylene",
+      "glycol",
+      "17",
+      "g",
+      "p.o.",
+      "q.d.",
+      "dissolved",
+      "in",
+      "8",
+      "oz",
+      "water",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "rectal",
+      "bleeding",
+      ",",
+      "tenesmus",
+      ",",
+      "or",
+      "unintentional",
+      "weight",
+      "loss",
+      ".",
+      "Encouraged",
+      "increased",
+      "dietary",
+      "fiber",
+      "and",
+      "daily",
+      "hydration",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "17 g"
+      ],
+      "medication_dosages": [
+        "17 g"
+      ],
+      "units": [
+        "g"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_034",
+    "text": "Dr. Reed evaluated pt for action tremor of bilateral upper extremities. Physical examination confirms mild kinetic tremor without bradykinesia or rigidity. Prescribed Propranolol 20 mg Tab. p.o. b.i.d. for symptomatic control. Patient denies dizziness, lightheadedness, or bronchospasm. Follow-up clinic appointment in 6 weeks.",
+    "expected_sentences": [
+      "Dr. Reed evaluated pt for action tremor of bilateral upper extremities.",
+      "Physical examination confirms mild kinetic tremor without bradykinesia or rigidity.",
+      "Prescribed Propranolol 20 mg Tab. p.o. b.i.d. for symptomatic control.",
+      "Patient denies dizziness, lightheadedness, or bronchospasm.",
+      "Follow-up clinic appointment in 6 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      70,
+      154,
+      225,
+      285,
+      326
+    ],
+    "expected_tokens": [
+      "Dr.",
+      "Reed",
+      "evaluated",
+      "pt",
+      "for",
+      "action",
+      "tremor",
+      "of",
+      "bilateral",
+      "upper",
+      "extremities",
+      ".",
+      "Physical",
+      "examination",
+      "confirms",
+      "mild",
+      "kinetic",
+      "tremor",
+      "without",
+      "bradykinesia",
+      "or",
+      "rigidity",
+      ".",
+      "Prescribed",
+      "Propranolol",
+      "20",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "b.i.d.",
+      "for",
+      "symptomatic",
+      "control",
+      ".",
+      "Patient",
+      "denies",
+      "dizziness",
+      ",",
+      "lightheadedness",
+      ",",
+      "or",
+      "bronchospasm",
+      ".",
+      "Follow-up",
+      "clinic",
+      "appointment",
+      "in",
+      "6",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Neurology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "pt",
+        "Tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "20 mg"
+      ],
+      "medication_dosages": [
+        "20 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_035",
+    "text": "Cardiovascular risk visit on 15/09/2023. Fasting lipid panel demonstrated LDL cholesterol 142.8 mg/dL and HDL 44.2 mg/dL. Rx adjusted to Rosuvastatin 20 mg Tab. p.o. q.h.s. for hyperlipidemia. Patient denies myalgias, muscle weakness, or dark urine. Repeat liver enzymes and lipid panel in 8 weeks.",
+    "expected_sentences": [
+      "Cardiovascular risk visit on 15/09/2023.",
+      "Fasting lipid panel demonstrated LDL cholesterol 142.8 mg/dL and HDL 44.2 mg/dL.",
+      "Rx adjusted to Rosuvastatin 20 mg Tab. p.o. q.h.s. for hyperlipidemia.",
+      "Patient denies myalgias, muscle weakness, or dark urine.",
+      "Repeat liver enzymes and lipid panel in 8 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      39,
+      120,
+      191,
+      248,
+      297
+    ],
+    "expected_tokens": [
+      "Cardiovascular",
+      "risk",
+      "visit",
+      "on",
+      "15/09/2023",
+      ".",
+      "Fasting",
+      "lipid",
+      "panel",
+      "demonstrated",
+      "LDL",
+      "cholesterol",
+      "142.8",
+      "mg/dL",
+      "and",
+      "HDL",
+      "44.2",
+      "mg/dL",
+      ".",
+      "Rx",
+      "adjusted",
+      "to",
+      "Rosuvastatin",
+      "20",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.h.s.",
+      "for",
+      "hyperlipidemia",
+      ".",
+      "Patient",
+      "denies",
+      "myalgias",
+      ",",
+      "muscle",
+      "weakness",
+      ",",
+      "or",
+      "dark",
+      "urine",
+      ".",
+      "Repeat",
+      "liver",
+      "enzymes",
+      "and",
+      "lipid",
+      "panel",
+      "in",
+      "8",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "LDL",
+        "mg/dL",
+        "HDL",
+        "Rx",
+        "Tab.",
+        "p.o.",
+        "q.h.s."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "q.h.s."
+      ],
+      "medical_shorthand": [
+        "rx",
+        "tab.",
+        "p.o."
+      ],
+      "decimal_values": [
+        "142.8",
+        "44.2"
+      ],
+      "decimal_measurements": [
+        "142.8",
+        "44.2"
+      ],
+      "dates": [
+        "15/09/2023"
+      ],
+      "dosages": [
+        "20 mg"
+      ],
+      "medication_dosages": [
+        "20 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "rx",
+          "canonical": "prescription"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_036",
+    "text": "Pt seen for management of generalized anxiety disorder. GAD-7 score is 11 showing moderate anxiety symptoms. Prescribed Buspirone 10 mg p.o. b.i.d. as augmentation therapy. Pt denies panic attacks, agoraphobia, or substance abuse. Cognitive behavioral therapy referral submitted.",
+    "expected_sentences": [
+      "Pt seen for management of generalized anxiety disorder.",
+      "GAD-7 score is 11 showing moderate anxiety symptoms.",
+      "Prescribed Buspirone 10 mg p.o. b.i.d. as augmentation therapy.",
+      "Pt denies panic attacks, agoraphobia, or substance abuse.",
+      "Cognitive behavioral therapy referral submitted."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      54,
+      107,
+      171,
+      229,
+      278
+    ],
+    "expected_tokens": [
+      "Pt",
+      "seen",
+      "for",
+      "management",
+      "of",
+      "generalized",
+      "anxiety",
+      "disorder",
+      ".",
+      "GAD-7",
+      "score",
+      "is",
+      "11",
+      "showing",
+      "moderate",
+      "anxiety",
+      "symptoms",
+      ".",
+      "Prescribed",
+      "Buspirone",
+      "10",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "as",
+      "augmentation",
+      "therapy",
+      ".",
+      "Pt",
+      "denies",
+      "panic",
+      "attacks",
+      ",",
+      "agoraphobia",
+      ",",
+      "or",
+      "substance",
+      "abuse",
+      ".",
+      "Cognitive",
+      "behavioral",
+      "therapy",
+      "referral",
+      "submitted",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Psychiatry",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "10 mg"
+      ],
+      "medication_dosages": [
+        "10 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_037",
+    "text": "CPAP compliance check with Dr. Turner. Machine download shows 6.5 hr average nightly usage at 10.0 cmH2O pressure. Epworth sleepiness score improved to 4. Patient is not having daytime somnolence or morning headaches. Continued current settings without adjustments.",
+    "expected_sentences": [
+      "CPAP compliance check with Dr. Turner.",
+      "Machine download shows 6.5 hr average nightly usage at 10.0 cmH2O pressure.",
+      "Epworth sleepiness score improved to 4.",
+      "Patient is not having daytime somnolence or morning headaches.",
+      "Continued current settings without adjustments."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      37,
+      113,
+      153,
+      216,
+      264
+    ],
+    "expected_tokens": [
+      "CPAP",
+      "compliance",
+      "check",
+      "with",
+      "Dr.",
+      "Turner",
+      ".",
+      "Machine",
+      "download",
+      "shows",
+      "6.5",
+      "hr",
+      "average",
+      "nightly",
+      "usage",
+      "at",
+      "10.0",
+      "cmH2O",
+      "pressure",
+      ".",
+      "Epworth",
+      "sleepiness",
+      "score",
+      "improved",
+      "to",
+      "4",
+      ".",
+      "Patient",
+      "is",
+      "not",
+      "having",
+      "daytime",
+      "somnolence",
+      "or",
+      "morning",
+      "headaches",
+      ".",
+      "Continued",
+      "current",
+      "settings",
+      "without",
+      "adjustments",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "hr."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "hr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [
+        "6.5",
+        "10.0"
+      ],
+      "decimal_measurements": [
+        "6.5",
+        "10.0"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "not",
+        "without"
+      ],
+      "clinical_negations": [
+        "not",
+        "without"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_038",
+    "text": "Patient presents with persistent right shoulder rotator cuff tendinopathy. Range of motion intact without frank impingement on Neer test. Recommended Ibuprofen 600 mg Tab. p.o. t.i.d. p.r.n. with meals. Pt denies paresthesias, numbness, or weakness in right hand. Physical therapy referral renewed for 6 weeks.",
+    "expected_sentences": [
+      "Patient presents with persistent right shoulder rotator cuff tendinopathy.",
+      "Range of motion intact without frank impingement on Neer test.",
+      "Recommended Ibuprofen 600 mg Tab. p.o. t.i.d. p.r.n. with meals.",
+      "Pt denies paresthesias, numbness, or weakness in right hand.",
+      "Physical therapy referral renewed for 6 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      73,
+      136,
+      201,
+      262,
+      309
+    ],
+    "expected_tokens": [
+      "Patient",
+      "presents",
+      "with",
+      "persistent",
+      "right",
+      "shoulder",
+      "rotator",
+      "cuff",
+      "tendinopathy",
+      ".",
+      "Range",
+      "of",
+      "motion",
+      "intact",
+      "without",
+      "frank",
+      "impingement",
+      "on",
+      "Neer",
+      "test",
+      ".",
+      "Recommended",
+      "Ibuprofen",
+      "600",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "t.i.d.",
+      "p.r.n.",
+      "with",
+      "meals",
+      ".",
+      "Pt",
+      "denies",
+      "paresthesias",
+      ",",
+      "numbness",
+      ",",
+      "or",
+      "weakness",
+      "in",
+      "right",
+      "hand",
+      ".",
+      "Physical",
+      "therapy",
+      "referral",
+      "renewed",
+      "for",
+      "6",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Orthopedics",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n.",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n.",
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "600 mg"
+      ],
+      "medication_dosages": [
+        "600 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        },
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_039",
+    "text": "Pt presented to ED with acute nausea and watery diarrhea. Vital signs: BP 114/72 mmHg, HR 80 bpm, afebrile at 98.6 F. Administered Ondansetron 4 mg p.o. with good symptomatic relief. Patient denies hematemesis or severe cramping abdominal pain. Discharged with oral rehydration salts.",
+    "expected_sentences": [
+      "Pt presented to ED with acute nausea and watery diarrhea.",
+      "Vital signs: BP 114/72 mmHg, HR 80 bpm, afebrile at 98.6 F.",
+      "Administered Ondansetron 4 mg p.o. with good symptomatic relief.",
+      "Patient denies hematemesis or severe cramping abdominal pain.",
+      "Discharged with oral rehydration salts."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      56,
+      116,
+      181,
+      243,
+      283
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presented",
+      "to",
+      "ED",
+      "with",
+      "acute",
+      "nausea",
+      "and",
+      "watery",
+      "diarrhea",
+      ".",
+      "Vital",
+      "signs",
+      ":",
+      "BP",
+      "114/72",
+      "mmHg",
+      ",",
+      "HR",
+      "80",
+      "bpm",
+      ",",
+      "afebrile",
+      "at",
+      "98.6",
+      "F.",
+      "Administered",
+      "Ondansetron",
+      "4",
+      "mg",
+      "p.o.",
+      "with",
+      "good",
+      "symptomatic",
+      "relief",
+      ".",
+      "Patient",
+      "denies",
+      "hematemesis",
+      "or",
+      "severe",
+      "cramping",
+      "abdominal",
+      "pain",
+      ".",
+      "Discharged",
+      "with",
+      "oral",
+      "rehydration",
+      "salts",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Emergency Medicine",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "ED",
+        "BP",
+        "HR",
+        "bpm",
+        "p.o."
+      ],
+      "protected_abbreviations": [
+        "p.o."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "ed",
+        "p.o."
+      ],
+      "decimal_values": [
+        "98.6"
+      ],
+      "decimal_measurements": [
+        "98.6"
+      ],
+      "dates": [],
+      "dosages": [
+        "4 mg"
+      ],
+      "medication_dosages": [
+        "4 mg"
+      ],
+      "units": [
+        "mmHg",
+        "bpm",
+        "mg"
+      ],
+      "blood_pressure": [
+        "114/72 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "ed",
+          "canonical": "emergency_department"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_040",
+    "text": "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h. patient denies chest tightness discharge planned pending peak flow check",
+    "expected_sentences": [
+      "patient admitted with c/o acute asthma exacerbation vitals stable BP 122/80 mmHg HR 94 regular.",
+      "Dr. Evans evaluated started on Methylprednisolone 40 mg i.v. q.8h.",
+      "patient denies chest tightness.",
+      "discharge planned pending peak flow check."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      94,
+      160,
+      192,
+      234
+    ],
+    "expected_tokens": [
+      "patient",
+      "admitted",
+      "with",
+      "c/o",
+      "acute",
+      "asthma",
+      "exacerbation",
+      "vitals",
+      "stable",
+      "BP",
+      "122/80",
+      "mmHg",
+      "HR",
+      "94",
+      "regular",
+      ".",
+      "Dr.",
+      "Evans",
+      "evaluated",
+      "started",
+      "on",
+      "Methylprednisolone",
+      "40",
+      "mg",
+      "i.v.",
+      "q",
+      ".",
+      "8",
+      ".",
+      "patient",
+      "denies",
+      "chest",
+      "tightness",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "peak",
+      "flow",
+      "check",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "i.v.",
+        "q.8h."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "i.v.",
+        "q.8h."
+      ],
+      "medical_shorthand": [
+        "c/o",
+        "i.v."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "40 mg"
+      ],
+      "medication_dosages": [
+        "40 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "122/80 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "i.v.",
+          "canonical": "intravenous"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_041",
+    "text": "Routine geriatric evaluation conducted on 29/01/2024 by Dr. Harris. Baseline BP was 132/82 mmHg with pulse 72 bpm. Mini-Mental State Exam score was 28/30 indicating preserved cognitive function. Pt denies recurrent falls, dizziness, or vision changes. Recommended continuing daily walking routine.",
+    "expected_sentences": [
+      "Routine geriatric evaluation conducted on 29/01/2024 by Dr. Harris.",
+      "Baseline BP was 132/82 mmHg with pulse 72 bpm.",
+      "Mini-Mental State Exam score was 28/30 indicating preserved cognitive function.",
+      "Pt denies recurrent falls, dizziness, or vision changes.",
+      "Recommended continuing daily walking routine."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      66,
+      113,
+      193,
+      250,
+      296
+    ],
+    "expected_tokens": [
+      "Routine",
+      "geriatric",
+      "evaluation",
+      "conducted",
+      "on",
+      "29/01/2024",
+      "by",
+      "Dr.",
+      "Harris",
+      ".",
+      "Baseline",
+      "BP",
+      "was",
+      "132/82",
+      "mmHg",
+      "with",
+      "pulse",
+      "72",
+      "bpm",
+      ".",
+      "Mini-Mental",
+      "State",
+      "Exam",
+      "score",
+      "was",
+      "28/30",
+      "indicating",
+      "preserved",
+      "cognitive",
+      "function",
+      ".",
+      "Pt",
+      "denies",
+      "recurrent",
+      "falls",
+      ",",
+      "dizziness",
+      ",",
+      "or",
+      "vision",
+      "changes",
+      ".",
+      "Recommended",
+      "continuing",
+      "daily",
+      "walking",
+      "routine",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Primary Care",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "BP",
+        "bpm",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "29/01/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "mmHg",
+        "bpm"
+      ],
+      "blood_pressure": [
+        "132/82 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_042",
+    "text": "Pt with hypertriglyceridemia seen for lab review. Triglyceride levels improved from 350.0 mg/dL to 210.5 mg/dL on Fenofibrate 145 mg p.o. q.d. without side effects. Patient reports no pancreatitis symptoms or upper abdominal discomfort. Fasting blood glucose remains stable at 98.2 mg/dL. Re-evaluate in 6 months.",
+    "expected_sentences": [
+      "Pt with hypertriglyceridemia seen for lab review.",
+      "Triglyceride levels improved from 350.0 mg/dL to 210.5 mg/dL on Fenofibrate 145 mg p.o. q.d. without side effects.",
+      "Patient reports no pancreatitis symptoms or upper abdominal discomfort.",
+      "Fasting blood glucose remains stable at 98.2 mg/dL.",
+      "Re-evaluate in 6 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      48,
+      163,
+      235,
+      287,
+      312
+    ],
+    "expected_tokens": [
+      "Pt",
+      "with",
+      "hypertriglyceridemia",
+      "seen",
+      "for",
+      "lab",
+      "review",
+      ".",
+      "Triglyceride",
+      "levels",
+      "improved",
+      "from",
+      "350.0",
+      "mg/dL",
+      "to",
+      "210.5",
+      "mg/dL",
+      "on",
+      "Fenofibrate",
+      "145",
+      "mg",
+      "p.o.",
+      "q.d.",
+      "without",
+      "side",
+      "effects",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "pancreatitis",
+      "symptoms",
+      "or",
+      "upper",
+      "abdominal",
+      "discomfort",
+      ".",
+      "Fasting",
+      "blood",
+      "glucose",
+      "remains",
+      "stable",
+      "at",
+      "98.2",
+      "mg/dL",
+      ".",
+      "Re-evaluate",
+      "in",
+      "6",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "mg/dL",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "350.0",
+        "210.5",
+        "98.2"
+      ],
+      "decimal_measurements": [
+        "350.0",
+        "210.5",
+        "98.2"
+      ],
+      "dates": [],
+      "dosages": [
+        "145 mg"
+      ],
+      "medication_dosages": [
+        "145 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_043",
+    "text": "Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia. IPSS symptom score was 16 indicating moderate urinary symptoms. Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow. Patient denies gross hematuria, acute urinary retention, or dysuria. Follow-up clinic visit in 8 weeks.",
+    "expected_sentences": [
+      "Consultation with Dr. Martin for symptomatic benign prostatic hyperplasia.",
+      "IPSS symptom score was 16 indicating moderate urinary symptoms.",
+      "Prescribed Tamsulosin 0.4 mg Cap. p.o. q.h.s. to improve urinary flow.",
+      "Patient denies gross hematuria, acute urinary retention, or dysuria.",
+      "Follow-up clinic visit in 8 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      73,
+      137,
+      208,
+      277,
+      312
+    ],
+    "expected_tokens": [
+      "Consultation",
+      "with",
+      "Dr.",
+      "Martin",
+      "for",
+      "symptomatic",
+      "benign",
+      "prostatic",
+      "hyperplasia",
+      ".",
+      "IPSS",
+      "symptom",
+      "score",
+      "was",
+      "16",
+      "indicating",
+      "moderate",
+      "urinary",
+      "symptoms",
+      ".",
+      "Prescribed",
+      "Tamsulosin",
+      "0.4",
+      "mg",
+      "Cap.",
+      "p.o.",
+      "q.h.s.",
+      "to",
+      "improve",
+      "urinary",
+      "flow",
+      ".",
+      "Patient",
+      "denies",
+      "gross",
+      "hematuria",
+      ",",
+      "acute",
+      "urinary",
+      "retention",
+      ",",
+      "or",
+      "dysuria",
+      ".",
+      "Follow-up",
+      "clinic",
+      "visit",
+      "in",
+      "8",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Urology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "Cap.",
+        "p.o.",
+        "q.h.s."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Cap.",
+        "p.o.",
+        "q.h.s."
+      ],
+      "medical_shorthand": [
+        "cap.",
+        "p.o."
+      ],
+      "decimal_values": [
+        "0.4"
+      ],
+      "decimal_measurements": [
+        "0.4"
+      ],
+      "dates": [],
+      "dosages": [
+        "0.4 mg"
+      ],
+      "medication_dosages": [
+        "0.4 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "cap.",
+          "canonical": "capsule"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_044",
+    "text": "Patient diagnosed with uncomplicated acute cystitis. Urine culture grew E. coli sensitive to Nitrofurantoin. Prescribed Nitrofurantoin 100 mg Cap. p.o. b.i.d. for 5 days. Pt denies costovertebral angle tenderness, fever, or vomiting. Symptoms are expected to resolve completely.",
+    "expected_sentences": [
+      "Patient diagnosed with uncomplicated acute cystitis.",
+      "Urine culture grew E. coli sensitive to Nitrofurantoin.",
+      "Prescribed Nitrofurantoin 100 mg Cap. p.o. b.i.d. for 5 days.",
+      "Pt denies costovertebral angle tenderness, fever, or vomiting.",
+      "Symptoms are expected to resolve completely."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      51,
+      107,
+      169,
+      232,
+      277
+    ],
+    "expected_tokens": [
+      "Patient",
+      "diagnosed",
+      "with",
+      "uncomplicated",
+      "acute",
+      "cystitis",
+      ".",
+      "Urine",
+      "culture",
+      "grew",
+      "E.",
+      "coli",
+      "sensitive",
+      "to",
+      "Nitrofurantoin",
+      ".",
+      "Prescribed",
+      "Nitrofurantoin",
+      "100",
+      "mg",
+      "Cap.",
+      "p.o.",
+      "b.i.d.",
+      "for",
+      "5",
+      "days",
+      ".",
+      "Pt",
+      "denies",
+      "costovertebral",
+      "angle",
+      "tenderness",
+      ",",
+      "fever",
+      ",",
+      "or",
+      "vomiting",
+      ".",
+      "Symptoms",
+      "are",
+      "expected",
+      "to",
+      "resolve",
+      "completely",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Infectious Disease",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Cap.",
+        "p.o.",
+        "b.i.d.",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "Cap.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "cap.",
+        "p.o.",
+        "b.i.d.",
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "100 mg"
+      ],
+      "medication_dosages": [
+        "100 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "cap.",
+          "canonical": "capsule"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        },
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_045",
+    "text": "Pre-operative cardiac clearance on 03/05/2024 by Dr. Allen. 12-lead ECG reveals normal sinus rhythm at 70 bpm without ischemic ST changes. Pre-op blood pressure recorded at 120/78 mmHg. Patient denies exertional chest pressure, dyspnea, or palpitation. Deemed low risk for non-cardiac surgery.",
+    "expected_sentences": [
+      "Pre-operative cardiac clearance on 03/05/2024 by Dr. Allen.",
+      "12-lead ECG reveals normal sinus rhythm at 70 bpm without ischemic ST changes.",
+      "Pre-op blood pressure recorded at 120/78 mmHg.",
+      "Patient denies exertional chest pressure, dyspnea, or palpitation.",
+      "Deemed low risk for non-cardiac surgery."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      58,
+      137,
+      184,
+      251,
+      292
+    ],
+    "expected_tokens": [
+      "Pre-operative",
+      "cardiac",
+      "clearance",
+      "on",
+      "03/05/2024",
+      "by",
+      "Dr.",
+      "Allen",
+      ".",
+      "12",
+      "-",
+      "lead",
+      "ECG",
+      "reveals",
+      "normal",
+      "sinus",
+      "rhythm",
+      "at",
+      "70",
+      "bpm",
+      "without",
+      "ischemic",
+      "ST",
+      "changes",
+      ".",
+      "Pre-op",
+      "blood",
+      "pressure",
+      "recorded",
+      "at",
+      "120/78",
+      "mmHg",
+      ".",
+      "Patient",
+      "denies",
+      "exertional",
+      "chest",
+      "pressure",
+      ",",
+      "dyspnea",
+      ",",
+      "or",
+      "palpitation",
+      ".",
+      "Deemed",
+      "low",
+      "risk",
+      "for",
+      "non-cardiac",
+      "surgery",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "ECG",
+        "bpm",
+        "ST"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "03/05/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "bpm",
+        "mmHg"
+      ],
+      "blood_pressure": [
+        "120/78 mmHg"
+      ],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_046",
+    "text": "Pt presents with acute podagra affecting left first MTP joint. Serum uric acid elevated at 8.4 mg/dL. Initiated Colchicine 0.6 mg Tab. p.o. b.i.d. for acute attack. Patient denies polyarticular involvement, fever, or prior renal calculi. Scheduled for allopurinol initiation after flare subsides.",
+    "expected_sentences": [
+      "Pt presents with acute podagra affecting left first MTP joint.",
+      "Serum uric acid elevated at 8.4 mg/dL.",
+      "Initiated Colchicine 0.6 mg Tab. p.o. b.i.d. for acute attack.",
+      "Patient denies polyarticular involvement, fever, or prior renal calculi.",
+      "Scheduled for allopurinol initiation after flare subsides."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      61,
+      100,
+      163,
+      236,
+      295
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presents",
+      "with",
+      "acute",
+      "podagra",
+      "affecting",
+      "left",
+      "first",
+      "MTP",
+      "joint",
+      ".",
+      "Serum",
+      "uric",
+      "acid",
+      "elevated",
+      "at",
+      "8.4",
+      "mg/dL",
+      ".",
+      "Initiated",
+      "Colchicine",
+      "0.6",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "b.i.d.",
+      "for",
+      "acute",
+      "attack",
+      ".",
+      "Patient",
+      "denies",
+      "polyarticular",
+      "involvement",
+      ",",
+      "fever",
+      ",",
+      "or",
+      "prior",
+      "renal",
+      "calculi",
+      ".",
+      "Scheduled",
+      "for",
+      "allopurinol",
+      "initiation",
+      "after",
+      "flare",
+      "subsides",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Rheumatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "MTP",
+        "mg/dL",
+        "Tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "tab.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [
+        "8.4",
+        "0.6"
+      ],
+      "decimal_measurements": [
+        "8.4",
+        "0.6"
+      ],
+      "dates": [],
+      "dosages": [
+        "0.6 mg"
+      ],
+      "medication_dosages": [
+        "0.6 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_047",
+    "text": "Bronchiectasis evaluation with Dr. Young. High-resolution chest CT shows stable cylindrical bronchiectasis in right middle lobe. Prescribed hypertonic saline 3.0% nebulized b.i.d. for airway clearance. Patient denies hemoptysis, pleuritic pain, or unprovoked dyspnea. Sputum microbiology showed no Pseudomonas growth.",
+    "expected_sentences": [
+      "Bronchiectasis evaluation with Dr. Young.",
+      "High-resolution chest CT shows stable cylindrical bronchiectasis in right middle lobe.",
+      "Prescribed hypertonic saline 3.0% nebulized b.i.d. for airway clearance.",
+      "Patient denies hemoptysis, pleuritic pain, or unprovoked dyspnea.",
+      "Sputum microbiology showed no Pseudomonas growth."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      40,
+      127,
+      200,
+      266,
+      316
+    ],
+    "expected_tokens": [
+      "Bronchiectasis",
+      "evaluation",
+      "with",
+      "Dr.",
+      "Young",
+      ".",
+      "High-resolution",
+      "chest",
+      "CT",
+      "shows",
+      "stable",
+      "cylindrical",
+      "bronchiectasis",
+      "in",
+      "right",
+      "middle",
+      "lobe",
+      ".",
+      "Prescribed",
+      "hypertonic",
+      "saline",
+      "3.0%",
+      "nebulized",
+      "b.i.d.",
+      "for",
+      "airway",
+      "clearance",
+      ".",
+      "Patient",
+      "denies",
+      "hemoptysis",
+      ",",
+      "pleuritic",
+      "pain",
+      ",",
+      "or",
+      "unprovoked",
+      "dyspnea",
+      ".",
+      "Sputum",
+      "microbiology",
+      "showed",
+      "no",
+      "Pseudomonas",
+      "growth",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "CT",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "b.i.d."
+      ],
+      "decimal_values": [
+        "3.0%"
+      ],
+      "decimal_measurements": [
+        "3.0%"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "denies",
+        "no"
+      ],
+      "clinical_negations": [
+        "denies",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_048",
+    "text": "Pt presents with erythematous pruritic dermatitis of hands. Skin examination reveals mild excoriations without pustules or active drainage. Prescribed Triamcinolone 0.1% cream applied b.i.d. to affected areas. Patient reports no facial involvement or systemic manifestations. Emollient barrier creams advised frequently.",
+    "expected_sentences": [
+      "Pt presents with erythematous pruritic dermatitis of hands.",
+      "Skin examination reveals mild excoriations without pustules or active drainage.",
+      "Prescribed Triamcinolone 0.1% cream applied b.i.d. to affected areas.",
+      "Patient reports no facial involvement or systemic manifestations.",
+      "Emollient barrier creams advised frequently."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      58,
+      138,
+      208,
+      274,
+      319
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presents",
+      "with",
+      "erythematous",
+      "pruritic",
+      "dermatitis",
+      "of",
+      "hands",
+      ".",
+      "Skin",
+      "examination",
+      "reveals",
+      "mild",
+      "excoriations",
+      "without",
+      "pustules",
+      "or",
+      "active",
+      "drainage",
+      ".",
+      "Prescribed",
+      "Triamcinolone",
+      "0.1%",
+      "cream",
+      "applied",
+      "b.i.d.",
+      "to",
+      "affected",
+      "areas",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "facial",
+      "involvement",
+      "or",
+      "systemic",
+      "manifestations",
+      ".",
+      "Emollient",
+      "barrier",
+      "creams",
+      "advised",
+      "frequently",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Dermatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "b.i.d."
+      ],
+      "decimal_values": [
+        "0.1%"
+      ],
+      "decimal_measurements": [
+        "0.1%"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_049",
+    "text": "Post-concussion follow-up on 11/12/2023 with Dr. Nelson. Neurological examination is non-focal without cerebellar ataxia. Patient reports no photophobia, phonophobia, or cognitive fog. Cleared for gradual return to non-contact aerobic exercise. Re-evaluation if new symptoms arise.",
+    "expected_sentences": [
+      "Post-concussion follow-up on 11/12/2023 with Dr. Nelson.",
+      "Neurological examination is non-focal without cerebellar ataxia.",
+      "Patient reports no photophobia, phonophobia, or cognitive fog.",
+      "Cleared for gradual return to non-contact aerobic exercise.",
+      "Re-evaluation if new symptoms arise."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      55,
+      120,
+      183,
+      243,
+      280
+    ],
+    "expected_tokens": [
+      "Post-concussion",
+      "follow-up",
+      "on",
+      "11/12/2023",
+      "with",
+      "Dr.",
+      "Nelson",
+      ".",
+      "Neurological",
+      "examination",
+      "is",
+      "non-focal",
+      "without",
+      "cerebellar",
+      "ataxia",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "photophobia",
+      ",",
+      "phonophobia",
+      ",",
+      "or",
+      "cognitive",
+      "fog",
+      ".",
+      "Cleared",
+      "for",
+      "gradual",
+      "return",
+      "to",
+      "non-contact",
+      "aerobic",
+      "exercise",
+      ".",
+      "Re-evaluation",
+      "if",
+      "new",
+      "symptoms",
+      "arise",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Neurology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr."
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "11/12/2023"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_050",
+    "text": "pt admitted with c/o severe dehydration vitals stable BP 108/68 mmHg HR 96 regular Dr. Foster consulted started on Normal Saline 1000 ml i.v. bolus pt denies nausea discharge planned pending electrolyte check",
+    "expected_sentences": [
+      "pt admitted with c/o severe dehydration vitals stable BP 108/68 mmHg HR 96 regular.",
+      "Dr. Foster consulted started on Normal Saline 1000 ml i.v. bolus.",
+      "pt denies nausea.",
+      "discharge planned pending electrolyte check."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      82,
+      147,
+      164,
+      208
+    ],
+    "expected_tokens": [
+      "pt",
+      "admitted",
+      "with",
+      "c/o",
+      "severe",
+      "dehydration",
+      "vitals",
+      "stable",
+      "BP",
+      "108/68",
+      "mmHg",
+      "HR",
+      "96",
+      "regular",
+      ".",
+      "Dr.",
+      "Foster",
+      "consulted",
+      "started",
+      "on",
+      "Normal",
+      "Saline",
+      "1000",
+      "ml",
+      "i.v.",
+      "bolus",
+      ".",
+      "pt",
+      "denies",
+      "nausea",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "electrolyte",
+      "check",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Emergency Medicine",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "pt",
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "i.v."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "i.v."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "c/o",
+        "i.v."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "1000 ml"
+      ],
+      "medication_dosages": [
+        "1000 ml"
+      ],
+      "units": [
+        "mmHg",
+        "ml"
+      ],
+      "blood_pressure": [
+        "108/68 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "i.v.",
+          "canonical": "intravenous"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_051",
+    "text": "Adult immunization visit conducted on 17/10/2023. Administered Tdap vaccine 0.5 ml i.m. into left deltoid muscle. Patient tolerated the injection well without immediate adverse reaction. Pt denies prior history of anaphylaxis or Guillain-Barre syndrome. Vaccine information statement provided.",
+    "expected_sentences": [
+      "Adult immunization visit conducted on 17/10/2023.",
+      "Administered Tdap vaccine 0.5 ml i.m. into left deltoid muscle.",
+      "Patient tolerated the injection well without immediate adverse reaction.",
+      "Pt denies prior history of anaphylaxis or Guillain-Barre syndrome.",
+      "Vaccine information statement provided."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      48,
+      112,
+      185,
+      252,
+      292
+    ],
+    "expected_tokens": [
+      "Adult",
+      "immunization",
+      "visit",
+      "conducted",
+      "on",
+      "17/10/2023",
+      ".",
+      "Administered",
+      "Tdap",
+      "vaccine",
+      "0.5",
+      "ml",
+      "i.m.",
+      "into",
+      "left",
+      "deltoid",
+      "muscle",
+      ".",
+      "Patient",
+      "tolerated",
+      "the",
+      "injection",
+      "well",
+      "without",
+      "immediate",
+      "adverse",
+      "reaction",
+      ".",
+      "Pt",
+      "denies",
+      "prior",
+      "history",
+      "of",
+      "anaphylaxis",
+      "or",
+      "Guillain-Barre",
+      "syndrome",
+      ".",
+      "Vaccine",
+      "information",
+      "statement",
+      "provided",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Primary Care",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "i.m.",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "i.m."
+      ],
+      "medical_shorthand": [
+        "pt"
+      ],
+      "decimal_values": [
+        "0.5"
+      ],
+      "decimal_measurements": [
+        "0.5"
+      ],
+      "dates": [
+        "17/10/2023"
+      ],
+      "dosages": [
+        "0.5 ml"
+      ],
+      "medication_dosages": [
+        "0.5 ml"
+      ],
+      "units": [
+        "ml"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_052",
+    "text": "Follow-up for hepatic steatosis with Dr. Price. Serum ALT measured at 48 U/L and AST at 36 U/L. Abdominal ultrasound confirms mild hepatic fat infiltration without cirrhosis or ascites. Patient is not having jaundice, pruritus, or lower extremity edema. Weight loss and dietary modifications encouraged.",
+    "expected_sentences": [
+      "Follow-up for hepatic steatosis with Dr. Price.",
+      "Serum ALT measured at 48 U/L and AST at 36 U/L.",
+      "Abdominal ultrasound confirms mild hepatic fat infiltration without cirrhosis or ascites.",
+      "Patient is not having jaundice, pruritus, or lower extremity edema.",
+      "Weight loss and dietary modifications encouraged."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      46,
+      94,
+      184,
+      252,
+      302
+    ],
+    "expected_tokens": [
+      "Follow-up",
+      "for",
+      "hepatic",
+      "steatosis",
+      "with",
+      "Dr.",
+      "Price",
+      ".",
+      "Serum",
+      "ALT",
+      "measured",
+      "at",
+      "48",
+      "U/L",
+      "and",
+      "AST",
+      "at",
+      "36",
+      "U/L",
+      ".",
+      "Abdominal",
+      "ultrasound",
+      "confirms",
+      "mild",
+      "hepatic",
+      "fat",
+      "infiltration",
+      "without",
+      "cirrhosis",
+      "or",
+      "ascites",
+      ".",
+      "Patient",
+      "is",
+      "not",
+      "having",
+      "jaundice",
+      ",",
+      "pruritus",
+      ",",
+      "or",
+      "lower",
+      "extremity",
+      "edema",
+      ".",
+      "Weight",
+      "loss",
+      "and",
+      "dietary",
+      "modifications",
+      "encouraged",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "ALT",
+        "AST"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "U/L"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "not"
+      ],
+      "clinical_negations": [
+        "without",
+        "not"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_053",
+    "text": "Pt seen for post-radiation therapy surveillance. Physical exam reveals irradiated skin is intact without breakdown or telangiectasia. Comprehensive metabolic panel was completely normal. Patient explicitly denies fatigue, dysphagia, or unintended weight loss. Next surveillance PET-CT scheduled in 6 months.",
+    "expected_sentences": [
+      "Pt seen for post-radiation therapy surveillance.",
+      "Physical exam reveals irradiated skin is intact without breakdown or telangiectasia.",
+      "Comprehensive metabolic panel was completely normal.",
+      "Patient explicitly denies fatigue, dysphagia, or unintended weight loss.",
+      "Next surveillance PET-CT scheduled in 6 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      47,
+      132,
+      185,
+      258,
+      306
+    ],
+    "expected_tokens": [
+      "Pt",
+      "seen",
+      "for",
+      "post-radiation",
+      "therapy",
+      "surveillance",
+      ".",
+      "Physical",
+      "exam",
+      "reveals",
+      "irradiated",
+      "skin",
+      "is",
+      "intact",
+      "without",
+      "breakdown",
+      "or",
+      "telangiectasia",
+      ".",
+      "Comprehensive",
+      "metabolic",
+      "panel",
+      "was",
+      "completely",
+      "normal",
+      ".",
+      "Patient",
+      "explicitly",
+      "denies",
+      "fatigue",
+      ",",
+      "dysphagia",
+      ",",
+      "or",
+      "unintended",
+      "weight",
+      "loss",
+      ".",
+      "Next",
+      "surveillance",
+      "PET-CT",
+      "scheduled",
+      "in",
+      "6",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Oncology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "PET",
+        "CT"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_054",
+    "text": "Hypertension regimen adjustment with Dr. Bell. Seated clinic BP was 136/86 mmHg on dual therapy. Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril. Patient reports no dizziness, lightheadedness, or muscle cramps. Basic metabolic panel ordered for 2 weeks.",
+    "expected_sentences": [
+      "Hypertension regimen adjustment with Dr. Bell.",
+      "Seated clinic BP was 136/86 mmHg on dual therapy.",
+      "Added Chlorthalidone 25 mg Tab. p.o. q.d. to current Lisinopril.",
+      "Patient reports no dizziness, lightheadedness, or muscle cramps.",
+      "Basic metabolic panel ordered for 2 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      45,
+      95,
+      160,
+      225,
+      268
+    ],
+    "expected_tokens": [
+      "Hypertension",
+      "regimen",
+      "adjustment",
+      "with",
+      "Dr.",
+      "Bell",
+      ".",
+      "Seated",
+      "clinic",
+      "BP",
+      "was",
+      "136/86",
+      "mmHg",
+      "on",
+      "dual",
+      "therapy",
+      ".",
+      "Added",
+      "Chlorthalidone",
+      "25",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "q.d.",
+      "to",
+      "current",
+      "Lisinopril",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "dizziness",
+      ",",
+      "lightheadedness",
+      ",",
+      "or",
+      "muscle",
+      "cramps",
+      ".",
+      "Basic",
+      "metabolic",
+      "panel",
+      "ordered",
+      "for",
+      "2",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "BP",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "25 mg"
+      ],
+      "medication_dosages": [
+        "25 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "136/86 mmHg"
+      ],
+      "negations": [
+        "no"
+      ],
+      "clinical_negations": [
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_055",
+    "text": "DXA scan review demonstrates lumbar spine T-score of -2.6 indicating osteoporosis. Started on Alendronate 70 mg Tab. p.o. weekly with full glass of water. Pt instructed to remain upright for 30 min after dosing. Patient denies dysphagia, heartburn, or bone pain. Supplementation with Calcium 500 mg and Vitamin D recommended.",
+    "expected_sentences": [
+      "DXA scan review demonstrates lumbar spine T-score of -2.6 indicating osteoporosis.",
+      "Started on Alendronate 70 mg Tab. p.o. weekly with full glass of water.",
+      "Pt instructed to remain upright for 30 min after dosing.",
+      "Patient denies dysphagia, heartburn, or bone pain.",
+      "Supplementation with Calcium 500 mg and Vitamin D recommended."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      81,
+      153,
+      210,
+      261,
+      324
+    ],
+    "expected_tokens": [
+      "DXA",
+      "scan",
+      "review",
+      "demonstrates",
+      "lumbar",
+      "spine",
+      "T-score",
+      "of",
+      "-",
+      "2.6",
+      "indicating",
+      "osteoporosis",
+      ".",
+      "Started",
+      "on",
+      "Alendronate",
+      "70",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "weekly",
+      "with",
+      "full",
+      "glass",
+      "of",
+      "water",
+      ".",
+      "Pt",
+      "instructed",
+      "to",
+      "remain",
+      "upright",
+      "for",
+      "30",
+      "min",
+      "after",
+      "dosing",
+      ".",
+      "Patient",
+      "denies",
+      "dysphagia",
+      ",",
+      "heartburn",
+      ",",
+      "or",
+      "bone",
+      "pain",
+      ".",
+      "Supplementation",
+      "with",
+      "Calcium",
+      "500",
+      "mg",
+      "and",
+      "Vitamin",
+      "D",
+      "recommended",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Tab.",
+        "p.o.",
+        "Pt",
+        "min."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "min."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "pt"
+      ],
+      "decimal_values": [
+        "2.6"
+      ],
+      "decimal_measurements": [
+        "2.6"
+      ],
+      "dates": [],
+      "dosages": [
+        "70 mg",
+        "500 mg"
+      ],
+      "medication_dosages": [
+        "70 mg",
+        "500 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_056",
+    "text": "Renal ultrasound follow-up on 25/03/2024 for polycystic kidney disease. Serum creatinine was 1.3 mg/dL with calculated eGFR 58.2 mL/min. Blood pressure well controlled at 126/78 mmHg. Pt denies gross hematuria, flank colic, or fever. Maintained on Losartan 100 mg p.o. q.d.",
+    "expected_sentences": [
+      "Renal ultrasound follow-up on 25/03/2024 for polycystic kidney disease.",
+      "Serum creatinine was 1.3 mg/dL with calculated eGFR 58.2 mL/min.",
+      "Blood pressure well controlled at 126/78 mmHg.",
+      "Pt denies gross hematuria, flank colic, or fever.",
+      "Maintained on Losartan 100 mg p.o. q.d."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      70,
+      135,
+      182,
+      232,
+      272
+    ],
+    "expected_tokens": [
+      "Renal",
+      "ultrasound",
+      "follow-up",
+      "on",
+      "25/03/2024",
+      "for",
+      "polycystic",
+      "kidney",
+      "disease",
+      ".",
+      "Serum",
+      "creatinine",
+      "was",
+      "1.3",
+      "mg/dL",
+      "with",
+      "calculated",
+      "eGFR",
+      "58.2",
+      "mL/min",
+      ".",
+      "Blood",
+      "pressure",
+      "well",
+      "controlled",
+      "at",
+      "126/78",
+      "mmHg",
+      ".",
+      "Pt",
+      "denies",
+      "gross",
+      "hematuria",
+      ",",
+      "flank",
+      "colic",
+      ",",
+      "or",
+      "fever",
+      ".",
+      "Maintained",
+      "on",
+      "Losartan",
+      "100",
+      "mg",
+      "p.o.",
+      "q.d."
+    ],
+    "annotations": {
+      "specialty": "Nephrology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "mg/dL",
+        "eGFR",
+        "mL/min",
+        "Pt",
+        "p.o.",
+        "q.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "q.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "q.d."
+      ],
+      "decimal_values": [
+        "1.3",
+        "58.2"
+      ],
+      "decimal_measurements": [
+        "1.3",
+        "58.2"
+      ],
+      "dates": [
+        "25/03/2024"
+      ],
+      "dosages": [
+        "100 mg"
+      ],
+      "medication_dosages": [
+        "100 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mL/min",
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "126/78 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "q.d.",
+          "canonical": "once_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_057",
+    "text": "Dr. Cooper evaluated pt for maintenance of bipolar II disorder. Euthymic mood maintained on Lamotrigine 100 mg p.o. b.i.d. without side effects. Pt denies hypomanic symptoms, racing thoughts, or depressive episode. Sleep patterns regular with 7-8 hours per night. Continued current maintenance rx.",
+    "expected_sentences": [
+      "Dr. Cooper evaluated pt for maintenance of bipolar II disorder.",
+      "Euthymic mood maintained on Lamotrigine 100 mg p.o. b.i.d. without side effects.",
+      "Pt denies hypomanic symptoms, racing thoughts, or depressive episode.",
+      "Sleep patterns regular with 7-8 hours per night.",
+      "Continued current maintenance rx."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      62,
+      143,
+      213,
+      262,
+      296
+    ],
+    "expected_tokens": [
+      "Dr.",
+      "Cooper",
+      "evaluated",
+      "pt",
+      "for",
+      "maintenance",
+      "of",
+      "bipolar",
+      "II",
+      "disorder",
+      ".",
+      "Euthymic",
+      "mood",
+      "maintained",
+      "on",
+      "Lamotrigine",
+      "100",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "without",
+      "side",
+      "effects",
+      ".",
+      "Pt",
+      "denies",
+      "hypomanic",
+      "symptoms",
+      ",",
+      "racing",
+      "thoughts",
+      ",",
+      "or",
+      "depressive",
+      "episode",
+      ".",
+      "Sleep",
+      "patterns",
+      "regular",
+      "with",
+      "7",
+      "-",
+      "8",
+      "hours",
+      "per",
+      "night",
+      ".",
+      "Continued",
+      "current",
+      "maintenance",
+      "rx",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Psychiatry",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "pt",
+        "p.o.",
+        "b.i.d.",
+        "rx"
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "p.o.",
+        "b.i.d.",
+        "rx"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "100 mg"
+      ],
+      "medication_dosages": [
+        "100 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        },
+        {
+          "shorthand": "rx",
+          "canonical": "prescription"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_058",
+    "text": "Anticoagulation clinic visit for prosthetic mitral valve management. Today's therapeutic INR is 2.4 within target range of 2.0-3.0. Prescribed Warfarin 5 mg Tab. p.o. daily with alternating doses on weekends. Patient denies epistaxis, gingival bleeding, or spontaneous hematomas. Next INR check in 4 weeks.",
+    "expected_sentences": [
+      "Anticoagulation clinic visit for prosthetic mitral valve management.",
+      "Today's therapeutic INR is 2.4 within target range of 2.0-3.0.",
+      "Prescribed Warfarin 5 mg Tab. p.o. daily with alternating doses on weekends.",
+      "Patient denies epistaxis, gingival bleeding, or spontaneous hematomas.",
+      "Next INR check in 4 weeks."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      67,
+      130,
+      207,
+      278,
+      305
+    ],
+    "expected_tokens": [
+      "Anticoagulation",
+      "clinic",
+      "visit",
+      "for",
+      "prosthetic",
+      "mitral",
+      "valve",
+      "management",
+      ".",
+      "Today",
+      "'",
+      "s",
+      "therapeutic",
+      "INR",
+      "is",
+      "2.4",
+      "within",
+      "target",
+      "range",
+      "of",
+      "2.0",
+      "-",
+      "3.0",
+      ".",
+      "Prescribed",
+      "Warfarin",
+      "5",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "daily",
+      "with",
+      "alternating",
+      "doses",
+      "on",
+      "weekends",
+      ".",
+      "Patient",
+      "denies",
+      "epistaxis",
+      ",",
+      "gingival",
+      "bleeding",
+      ",",
+      "or",
+      "spontaneous",
+      "hematomas",
+      ".",
+      "Next",
+      "INR",
+      "check",
+      "in",
+      "4",
+      "weeks",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Hematology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "INR",
+        "Tab.",
+        "p.o."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o."
+      ],
+      "decimal_values": [
+        "2.4",
+        "2.0",
+        "3.0"
+      ],
+      "decimal_measurements": [
+        "2.4",
+        "2.0",
+        "3.0"
+      ],
+      "dates": [],
+      "dosages": [
+        "5 mg"
+      ],
+      "medication_dosages": [
+        "5 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_059",
+    "text": "Pt presented to ED with 3 cm left forearm laceration on 06/06/2024. Wound irrigated copiously with normal saline and closed with simple nylon sutures. Neurovascular examination intact distal to injury without tendon deficits. Patient denies numbness, paresthesias, or decreased motor function. Suture removal scheduled in 10 days.",
+    "expected_sentences": [
+      "Pt presented to ED with 3 cm left forearm laceration on 06/06/2024.",
+      "Wound irrigated copiously with normal saline and closed with simple nylon sutures.",
+      "Neurovascular examination intact distal to injury without tendon deficits.",
+      "Patient denies numbness, paresthesias, or decreased motor function.",
+      "Suture removal scheduled in 10 days."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      66,
+      149,
+      224,
+      292,
+      329
+    ],
+    "expected_tokens": [
+      "Pt",
+      "presented",
+      "to",
+      "ED",
+      "with",
+      "3",
+      "cm",
+      "left",
+      "forearm",
+      "laceration",
+      "on",
+      "06/06/2024",
+      ".",
+      "Wound",
+      "irrigated",
+      "copiously",
+      "with",
+      "normal",
+      "saline",
+      "and",
+      "closed",
+      "with",
+      "simple",
+      "nylon",
+      "sutures",
+      ".",
+      "Neurovascular",
+      "examination",
+      "intact",
+      "distal",
+      "to",
+      "injury",
+      "without",
+      "tendon",
+      "deficits",
+      ".",
+      "Patient",
+      "denies",
+      "numbness",
+      ",",
+      "paresthesias",
+      ",",
+      "or",
+      "decreased",
+      "motor",
+      "function",
+      ".",
+      "Suture",
+      "removal",
+      "scheduled",
+      "in",
+      "10",
+      "days",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Emergency Medicine",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "ED"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [
+        "pt",
+        "ed"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "06/06/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "cm"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "ed",
+          "canonical": "emergency_department"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_060",
+    "text": "patient admitted with c/o diabetic ketoacidosis resolved vitals stable BP 124/76 mmHg HR 80 regular Dr. Green evaluated started on Glargine 18 units subcutaneous q.h.s. patient denies abdominal pain discharge planned pending gap closure",
+    "expected_sentences": [
+      "patient admitted with c/o diabetic ketoacidosis resolved vitals stable BP 124/76 mmHg HR 80 regular.",
+      "Dr. Green evaluated started on Glargine 18 units subcutaneous q.h.s.",
+      "patient denies abdominal pain.",
+      "discharge planned pending gap closure."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      99,
+      167,
+      198,
+      236
+    ],
+    "expected_tokens": [
+      "patient",
+      "admitted",
+      "with",
+      "c/o",
+      "diabetic",
+      "ketoacidosis",
+      "resolved",
+      "vitals",
+      "stable",
+      "BP",
+      "124/76",
+      "mmHg",
+      "HR",
+      "80",
+      "regular",
+      ".",
+      "Dr.",
+      "Green",
+      "evaluated",
+      "started",
+      "on",
+      "Glargine",
+      "18",
+      "units",
+      "subcutaneous",
+      "q.h.s.",
+      "patient",
+      "denies",
+      "abdominal",
+      "pain",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "gap",
+      "closure",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "q.h.s."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "q.h.s."
+      ],
+      "medical_shorthand": [
+        "c/o"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "18 units"
+      ],
+      "medication_dosages": [
+        "18 units"
+      ],
+      "units": [
+        "mmHg",
+        "units"
+      ],
+      "blood_pressure": [
+        "124/76 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_061",
+    "text": "Monitoring of idiopathic pulmonary fibrosis with Dr. Wright. DLCO measurement was 64.5% of predicted with FVC 2.8 L. High-resolution CT chest shows stable subpleural reticulation without acute progression. Patient is not having resting dyspnea or hemoptysis. Oxygen saturation maintained at 95% on room air.",
+    "expected_sentences": [
+      "Monitoring of idiopathic pulmonary fibrosis with Dr. Wright.",
+      "DLCO measurement was 64.5% of predicted with FVC 2.8 L.",
+      "High-resolution CT chest shows stable subpleural reticulation without acute progression.",
+      "Patient is not having resting dyspnea or hemoptysis.",
+      "Oxygen saturation maintained at 95% on room air."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      59,
+      115,
+      204,
+      257,
+      306
+    ],
+    "expected_tokens": [
+      "Monitoring",
+      "of",
+      "idiopathic",
+      "pulmonary",
+      "fibrosis",
+      "with",
+      "Dr.",
+      "Wright",
+      ".",
+      "DLCO",
+      "measurement",
+      "was",
+      "64.5%",
+      "of",
+      "predicted",
+      "with",
+      "FVC",
+      "2.8",
+      "L.",
+      "High-resolution",
+      "CT",
+      "chest",
+      "shows",
+      "stable",
+      "subpleural",
+      "reticulation",
+      "without",
+      "acute",
+      "progression",
+      ".",
+      "Patient",
+      "is",
+      "not",
+      "having",
+      "resting",
+      "dyspnea",
+      "or",
+      "hemoptysis",
+      ".",
+      "Oxygen",
+      "saturation",
+      "maintained",
+      "at",
+      "95%",
+      "on",
+      "room",
+      "air",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Pulmonology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "DLCO",
+        "FVC",
+        "CT"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [
+        "64.5%",
+        "2.8"
+      ],
+      "decimal_measurements": [
+        "64.5%",
+        "2.8"
+      ],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "L"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "not"
+      ],
+      "clinical_negations": [
+        "without",
+        "not"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_062",
+    "text": "Evaluation for neurocardiogenic syncope by Dr. Stewart. Orthostatic vitals: supine BP 128/80 mmHg, standing BP 124/78 mmHg. 24-hour ambulatory Holter monitor was negative for high-grade pauses or ventricular tachycardia. Patient denies chest pain, palpitations, or trauma during episodes. Advised increased fluid intake and salt repletion.",
+    "expected_sentences": [
+      "Evaluation for neurocardiogenic syncope by Dr. Stewart.",
+      "Orthostatic vitals: supine BP 128/80 mmHg, standing BP 124/78 mmHg.",
+      "24-hour ambulatory Holter monitor was negative for high-grade pauses or ventricular tachycardia.",
+      "Patient denies chest pain, palpitations, or trauma during episodes.",
+      "Advised increased fluid intake and salt repletion."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      54,
+      122,
+      219,
+      287,
+      338
+    ],
+    "expected_tokens": [
+      "Evaluation",
+      "for",
+      "neurocardiogenic",
+      "syncope",
+      "by",
+      "Dr.",
+      "Stewart",
+      ".",
+      "Orthostatic",
+      "vitals",
+      ":",
+      "supine",
+      "BP",
+      "128/80",
+      "mmHg",
+      ",",
+      "standing",
+      "BP",
+      "124/78",
+      "mmHg",
+      ".",
+      "24",
+      "-",
+      "hour",
+      "ambulatory",
+      "Holter",
+      "monitor",
+      "was",
+      "negative",
+      "for",
+      "high-grade",
+      "pauses",
+      "or",
+      "ventricular",
+      "tachycardia",
+      ".",
+      "Patient",
+      "denies",
+      "chest",
+      "pain",
+      ",",
+      "palpitations",
+      ",",
+      "or",
+      "trauma",
+      "during",
+      "episodes",
+      ".",
+      "Advised",
+      "increased",
+      "fluid",
+      "intake",
+      "and",
+      "salt",
+      "repletion",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Cardiology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "BP"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "mmHg"
+      ],
+      "blood_pressure": [
+        "128/80 mmHg",
+        "124/78 mmHg"
+      ],
+      "negations": [
+        "negative",
+        "denies"
+      ],
+      "clinical_negations": [
+        "negative",
+        "denies"
+      ],
+      "expected_normalizations": []
+    }
+  },
+  {
+    "id": "transcript_063",
+    "text": "Pt with established hx of systemic lupus erythematosus evaluated today. Routine urinalysis is negative for proteinuria or cellular casts. Maintained on Hydroxychloroquine 200 mg p.o. b.i.d. without retinal toxicity. Pt denies malar rash, oral ulcers, or active arthritis. Follow-up lab tests ordered in 3 months.",
+    "expected_sentences": [
+      "Pt with established hx of systemic lupus erythematosus evaluated today.",
+      "Routine urinalysis is negative for proteinuria or cellular casts.",
+      "Maintained on Hydroxychloroquine 200 mg p.o. b.i.d. without retinal toxicity.",
+      "Pt denies malar rash, oral ulcers, or active arthritis.",
+      "Follow-up lab tests ordered in 3 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      70,
+      136,
+      214,
+      270,
+      311
+    ],
+    "expected_tokens": [
+      "Pt",
+      "with",
+      "established",
+      "hx",
+      "of",
+      "systemic",
+      "lupus",
+      "erythematosus",
+      "evaluated",
+      "today",
+      ".",
+      "Routine",
+      "urinalysis",
+      "is",
+      "negative",
+      "for",
+      "proteinuria",
+      "or",
+      "cellular",
+      "casts",
+      ".",
+      "Maintained",
+      "on",
+      "Hydroxychloroquine",
+      "200",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "without",
+      "retinal",
+      "toxicity",
+      ".",
+      "Pt",
+      "denies",
+      "malar",
+      "rash",
+      ",",
+      "oral",
+      "ulcers",
+      ",",
+      "or",
+      "active",
+      "arthritis",
+      ".",
+      "Follow-up",
+      "lab",
+      "tests",
+      "ordered",
+      "in",
+      "3",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Rheumatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "hx",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "hx",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "200 mg"
+      ],
+      "medication_dosages": [
+        "200 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "negative",
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "negative",
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "hx",
+          "canonical": "history"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_064",
+    "text": "Clinical visit for diarrhea-predominant irritable bowel syndrome. Stool studies were negative for Clostridium difficile or enteric pathogens. Prescribed Tab. Dicyclomine 10 mg p.o. t.i.d. p.r.n. prior to meals. Patient denies bloody stools, fever, or nocturnal awakenings. Low-FODMAP dietary education provided.",
+    "expected_sentences": [
+      "Clinical visit for diarrhea-predominant irritable bowel syndrome.",
+      "Stool studies were negative for Clostridium difficile or enteric pathogens.",
+      "Prescribed Tab. Dicyclomine 10 mg p.o. t.i.d. p.r.n. prior to meals.",
+      "Patient denies bloody stools, fever, or nocturnal awakenings.",
+      "Low-FODMAP dietary education provided."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      64,
+      140,
+      209,
+      271,
+      310
+    ],
+    "expected_tokens": [
+      "Clinical",
+      "visit",
+      "for",
+      "diarrhea-predominant",
+      "irritable",
+      "bowel",
+      "syndrome",
+      ".",
+      "Stool",
+      "studies",
+      "were",
+      "negative",
+      "for",
+      "Clostridium",
+      "difficile",
+      "or",
+      "enteric",
+      "pathogens",
+      ".",
+      "Prescribed",
+      "Tab.",
+      "Dicyclomine",
+      "10",
+      "mg",
+      "p.o.",
+      "t.i.d.",
+      "p.r.n.",
+      "prior",
+      "to",
+      "meals",
+      ".",
+      "Patient",
+      "denies",
+      "bloody",
+      "stools",
+      ",",
+      "fever",
+      ",",
+      "or",
+      "nocturnal",
+      "awakenings",
+      ".",
+      "Low-FODMAP",
+      "dietary",
+      "education",
+      "provided",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n."
+      ],
+      "protected_abbreviations": [
+        "Tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "t.i.d.",
+        "p.r.n."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "10 mg"
+      ],
+      "medication_dosages": [
+        "10 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "negative",
+        "denies"
+      ],
+      "clinical_negations": [
+        "negative",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_065",
+    "text": "Tension-type headache consultation conducted on 09/01/2024. Cranial nerve examination II through XII normal without asymmetry. Advised Acetaminophen 500 mg p.o. p.r.n. with max 2000 mg daily. Pt denies visual disturbances, numbness, or limb weakness. Scheduled routine follow-up in 2 months.",
+    "expected_sentences": [
+      "Tension-type headache consultation conducted on 09/01/2024.",
+      "Cranial nerve examination II through XII normal without asymmetry.",
+      "Advised Acetaminophen 500 mg p.o. p.r.n. with max 2000 mg daily.",
+      "Pt denies visual disturbances, numbness, or limb weakness.",
+      "Scheduled routine follow-up in 2 months."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      58,
+      125,
+      190,
+      249,
+      290
+    ],
+    "expected_tokens": [
+      "Tension-type",
+      "headache",
+      "consultation",
+      "conducted",
+      "on",
+      "09/01/2024",
+      ".",
+      "Cranial",
+      "nerve",
+      "examination",
+      "II",
+      "through",
+      "XII",
+      "normal",
+      "without",
+      "asymmetry",
+      ".",
+      "Advised",
+      "Acetaminophen",
+      "500",
+      "mg",
+      "p.o.",
+      "p.r.n.",
+      "with",
+      "max",
+      "2000",
+      "mg",
+      "daily",
+      ".",
+      "Pt",
+      "denies",
+      "visual",
+      "disturbances",
+      ",",
+      "numbness",
+      ",",
+      "or",
+      "limb",
+      "weakness",
+      ".",
+      "Scheduled",
+      "routine",
+      "follow-up",
+      "in",
+      "2",
+      "months",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Neurology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "p.o.",
+        "p.r.n.",
+        "Pt"
+      ],
+      "protected_abbreviations": [
+        "p.o.",
+        "p.r.n."
+      ],
+      "medical_shorthand": [
+        "p.o.",
+        "p.r.n.",
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "09/01/2024"
+      ],
+      "dosages": [
+        "500 mg",
+        "2000 mg"
+      ],
+      "medication_dosages": [
+        "500 mg",
+        "2000 mg"
+      ],
+      "units": [
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "p.r.n.",
+          "canonical": "as_needed"
+        },
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_066",
+    "text": "Colon cancer screening discussion with Dr. Hughes. Screening colonoscopy successfully scheduled for 14/07/2024 at surgical center. Patient instructed on split-dose bowel prep without missing hydration. Patient reports no personal hx of inflammatory bowel disease or polyps. Reassurance provided regarding sedation safety.",
+    "expected_sentences": [
+      "Colon cancer screening discussion with Dr. Hughes.",
+      "Screening colonoscopy successfully scheduled for 14/07/2024 at surgical center.",
+      "Patient instructed on split-dose bowel prep without missing hydration.",
+      "Patient reports no personal hx of inflammatory bowel disease or polyps.",
+      "Reassurance provided regarding sedation safety."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      49,
+      129,
+      200,
+      272,
+      320
+    ],
+    "expected_tokens": [
+      "Colon",
+      "cancer",
+      "screening",
+      "discussion",
+      "with",
+      "Dr.",
+      "Hughes",
+      ".",
+      "Screening",
+      "colonoscopy",
+      "successfully",
+      "scheduled",
+      "for",
+      "14/07/2024",
+      "at",
+      "surgical",
+      "center",
+      ".",
+      "Patient",
+      "instructed",
+      "on",
+      "split-dose",
+      "bowel",
+      "prep",
+      "without",
+      "missing",
+      "hydration",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "personal",
+      "hx",
+      "of",
+      "inflammatory",
+      "bowel",
+      "disease",
+      "or",
+      "polyps",
+      ".",
+      "Reassurance",
+      "provided",
+      "regarding",
+      "sedation",
+      "safety",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Primary Care",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "hx"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [
+        "hx"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "14/07/2024"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "hx",
+          "canonical": "history"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_067",
+    "text": "Pt evaluated for patchy alopecia areata of scalp by Dr. Murphy. Administered intralesional triamcinolone acetonide 5 mg/ml in small aliquots. Patient tolerated procedure well without skin atrophy or telangiectasia. Pt denies itching, burning, or systemic hair shedding. Return visit in 6 weeks for repeat injection.",
+    "expected_sentences": [
+      "Pt evaluated for patchy alopecia areata of scalp by Dr. Murphy.",
+      "Administered intralesional triamcinolone acetonide 5 mg/ml in small aliquots.",
+      "Patient tolerated procedure well without skin atrophy or telangiectasia.",
+      "Pt denies itching, burning, or systemic hair shedding.",
+      "Return visit in 6 weeks for repeat injection."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      62,
+      140,
+      213,
+      268,
+      314
+    ],
+    "expected_tokens": [
+      "Pt",
+      "evaluated",
+      "for",
+      "patchy",
+      "alopecia",
+      "areata",
+      "of",
+      "scalp",
+      "by",
+      "Dr.",
+      "Murphy",
+      ".",
+      "Administered",
+      "intralesional",
+      "triamcinolone",
+      "acetonide",
+      "5",
+      "mg/ml",
+      "in",
+      "small",
+      "aliquots",
+      ".",
+      "Patient",
+      "tolerated",
+      "procedure",
+      "well",
+      "without",
+      "skin",
+      "atrophy",
+      "or",
+      "telangiectasia",
+      ".",
+      "Pt",
+      "denies",
+      "itching",
+      ",",
+      "burning",
+      ",",
+      "or",
+      "systemic",
+      "hair",
+      "shedding",
+      ".",
+      "Return",
+      "visit",
+      "in",
+      "6",
+      "weeks",
+      "for",
+      "repeat",
+      "injection",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Dermatology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Pt",
+        "Dr.",
+        "mg/ml"
+      ],
+      "protected_abbreviations": [
+        "Dr."
+      ],
+      "medical_shorthand": [
+        "pt"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "5 mg/ml"
+      ],
+      "medication_dosages": [
+        "5 mg/ml"
+      ],
+      "units": [
+        "mg/ml"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "denies"
+      ],
+      "clinical_negations": [
+        "without",
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_068",
+    "text": "Evaluation of postsurgical hypoparathyroidism with Dr. Scott. Serum calcium was 9.1 mg/dL on current supplementation. Prescribed Calcium carbonate 500 mg Tab. p.o. t.i.d. with meals. Patient denies perioral numbness, paresthesias, or muscle cramps. Chvostek and Trousseau signs are negative.",
+    "expected_sentences": [
+      "Evaluation of postsurgical hypoparathyroidism with Dr. Scott.",
+      "Serum calcium was 9.1 mg/dL on current supplementation.",
+      "Prescribed Calcium carbonate 500 mg Tab. p.o. t.i.d. with meals.",
+      "Patient denies perioral numbness, paresthesias, or muscle cramps.",
+      "Chvostek and Trousseau signs are negative."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      60,
+      116,
+      181,
+      247,
+      290
+    ],
+    "expected_tokens": [
+      "Evaluation",
+      "of",
+      "postsurgical",
+      "hypoparathyroidism",
+      "with",
+      "Dr.",
+      "Scott",
+      ".",
+      "Serum",
+      "calcium",
+      "was",
+      "9.1",
+      "mg/dL",
+      "on",
+      "current",
+      "supplementation",
+      ".",
+      "Prescribed",
+      "Calcium",
+      "carbonate",
+      "500",
+      "mg",
+      "Tab.",
+      "p.o.",
+      "t.i.d.",
+      "with",
+      "meals",
+      ".",
+      "Patient",
+      "denies",
+      "perioral",
+      "numbness",
+      ",",
+      "paresthesias",
+      ",",
+      "or",
+      "muscle",
+      "cramps",
+      ".",
+      "Chvostek",
+      "and",
+      "Trousseau",
+      "signs",
+      "are",
+      "negative",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Endocrinology",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "Dr.",
+        "mg/dL",
+        "Tab.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "Tab.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "medical_shorthand": [
+        "tab.",
+        "p.o.",
+        "t.i.d."
+      ],
+      "decimal_values": [
+        "9.1"
+      ],
+      "decimal_measurements": [
+        "9.1"
+      ],
+      "dates": [],
+      "dosages": [
+        "500 mg"
+      ],
+      "medication_dosages": [
+        "500 mg"
+      ],
+      "units": [
+        "mg/dL",
+        "mg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "denies",
+        "negative"
+      ],
+      "clinical_negations": [
+        "denies",
+        "negative"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "tab.",
+          "canonical": "tablet"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "t.i.d.",
+          "canonical": "three_times_daily"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_069",
+    "text": "Post-operative check on 30/08/2023 s/p right inguinal hernia repair. Surgical incision has healed cleanly without wound dehiscence or seroma. Patient reports no groin bulging or severe tenderness on Valsalva. Regular physical activity permitted without heavy lifting exceeding 15 kg. Cleared from surgical clinic.",
+    "expected_sentences": [
+      "Post-operative check on 30/08/2023 s/p right inguinal hernia repair.",
+      "Surgical incision has healed cleanly without wound dehiscence or seroma.",
+      "Patient reports no groin bulging or severe tenderness on Valsalva.",
+      "Regular physical activity permitted without heavy lifting exceeding 15 kg.",
+      "Cleared from surgical clinic."
+    ],
+    "sentence_count": 5,
+    "expected_sentence_boundaries": [
+      67,
+      140,
+      207,
+      282,
+      312
+    ],
+    "expected_tokens": [
+      "Post-operative",
+      "check",
+      "on",
+      "30/08/2023",
+      "s/p",
+      "right",
+      "inguinal",
+      "hernia",
+      "repair",
+      ".",
+      "Surgical",
+      "incision",
+      "has",
+      "healed",
+      "cleanly",
+      "without",
+      "wound",
+      "dehiscence",
+      "or",
+      "seroma",
+      ".",
+      "Patient",
+      "reports",
+      "no",
+      "groin",
+      "bulging",
+      "or",
+      "severe",
+      "tenderness",
+      "on",
+      "Valsalva",
+      ".",
+      "Regular",
+      "physical",
+      "activity",
+      "permitted",
+      "without",
+      "heavy",
+      "lifting",
+      "exceeding",
+      "15",
+      "kg",
+      ".",
+      "Cleared",
+      "from",
+      "surgical",
+      "clinic",
+      "."
+    ],
+    "annotations": {
+      "specialty": "General Surgery",
+      "dictation_style": "punctuated",
+      "abbreviations": [
+        "s/p"
+      ],
+      "protected_abbreviations": [],
+      "medical_shorthand": [
+        "s/p"
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [
+        "30/08/2023"
+      ],
+      "dosages": [],
+      "medication_dosages": [],
+      "units": [
+        "kg"
+      ],
+      "blood_pressure": [],
+      "negations": [
+        "without",
+        "no"
+      ],
+      "clinical_negations": [
+        "without",
+        "no"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "s/p",
+          "canonical": "status_post"
+        }
+      ]
+    }
+  },
+  {
+    "id": "transcript_070",
+    "text": "pt admitted with c/o acute diverticulitis vitals stable BP 130/82 mmHg HR 84 regular Dr. Harris consulted started on Ciprofloxacin 500 mg p.o. b.i.d. pt denies rectal bleeding discharge planned pending tolerating oral diet",
+    "expected_sentences": [
+      "pt admitted with c/o acute diverticulitis vitals stable BP 130/82 mmHg HR 84 regular.",
+      "Dr. Harris consulted started on Ciprofloxacin 500 mg p.o. b.i.d.",
+      "pt denies rectal bleeding.",
+      "discharge planned pending tolerating oral diet."
+    ],
+    "sentence_count": 4,
+    "expected_sentence_boundaries": [
+      84,
+      148,
+      175,
+      222
+    ],
+    "expected_tokens": [
+      "pt",
+      "admitted",
+      "with",
+      "c/o",
+      "acute",
+      "diverticulitis",
+      "vitals",
+      "stable",
+      "BP",
+      "130/82",
+      "mmHg",
+      "HR",
+      "84",
+      "regular",
+      ".",
+      "Dr.",
+      "Harris",
+      "consulted",
+      "started",
+      "on",
+      "Ciprofloxacin",
+      "500",
+      "mg",
+      "p.o.",
+      "b.i.d.",
+      "pt",
+      "denies",
+      "rectal",
+      "bleeding",
+      ".",
+      "discharge",
+      "planned",
+      "pending",
+      "tolerating",
+      "oral",
+      "diet",
+      "."
+    ],
+    "annotations": {
+      "specialty": "Gastroenterology",
+      "dictation_style": "unpunctuated",
+      "abbreviations": [
+        "pt",
+        "c/o",
+        "BP",
+        "HR",
+        "Dr.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "protected_abbreviations": [
+        "Dr.",
+        "p.o.",
+        "b.i.d."
+      ],
+      "medical_shorthand": [
+        "pt",
+        "c/o",
+        "p.o.",
+        "b.i.d."
+      ],
+      "decimal_values": [],
+      "decimal_measurements": [],
+      "dates": [],
+      "dosages": [
+        "500 mg"
+      ],
+      "medication_dosages": [
+        "500 mg"
+      ],
+      "units": [
+        "mmHg",
+        "mg"
+      ],
+      "blood_pressure": [
+        "130/82 mmHg"
+      ],
+      "negations": [
+        "denies"
+      ],
+      "clinical_negations": [
+        "denies"
+      ],
+      "expected_normalizations": [
+        {
+          "shorthand": "pt",
+          "canonical": "patient"
+        },
+        {
+          "shorthand": "c/o",
+          "canonical": "complaining_of"
+        },
+        {
+          "shorthand": "p.o.",
+          "canonical": "orally"
+        },
+        {
+          "shorthand": "b.i.d.",
+          "canonical": "twice_daily"
+        }
+      ]
+    }
+  }
+]

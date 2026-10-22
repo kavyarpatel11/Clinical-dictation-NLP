@@ -1,0 +1,8 @@
+flask
+nltk
+spacy
+regex
+pandas
+scikit-learn
+matplotlib
+pytest
