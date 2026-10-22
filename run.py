@@ -69,6 +69,8 @@ def favicon():
 
 
 @app.route("/", methods=["GET"])
+@app.route("/api/index", methods=["GET"])
+@app.route("/api", methods=["GET"])
 def index():
     """Renders the main clinical NLP demonstration interface."""
     return render_template(
@@ -80,6 +82,8 @@ def index():
 
 
 @app.route("/analyze", methods=["POST"])
+@app.route("/api/index/analyze", methods=["POST"])
+@app.route("/api/analyze", methods=["POST"])
 def analyze():
     """
     Analyzes a clinical transcript using the ClinicalDictationPipeline.
