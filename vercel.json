@@ -1,9 +1,9 @@
-
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/**/*.py": {
-      "excludeFiles": "{**/*.md,**/*.mdx,**/*.pdf,**/*.doc,**/*.docx,**/*.txt,**/*.ipynb,**/*.log,**/*.csv,**/*.pytest_cache/**,**/__pycache__/**,**/tests/**,**/test_*.py,**/.venv/**,**/venv/**}"
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
-  }
+  ]
 }
